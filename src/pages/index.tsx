@@ -32,13 +32,13 @@ export default function Home() {
     <div className="h-screen w-full flex">
       <div className="w-auto py-6 px-4 flex flex-col gap-8 max-h-full overflow-auto">
         {compsData.groups.map(({ label, comps }, i) => (
-          <div className="">
+          <div key={label} className="">
             <div className="font-semibold text-xs uppercase text-white/50 mb-2">
               {label} comps
             </div>
             <div className="flex flex-col gap-2.5">
               {comps.map((it) => (
-                <div className="leading-none">
+                <div key={it.name} className="leading-none">
                   <button
                     onClick={() => onScroll(it)}
                     className="transition-all pl-1.5 border-l-2 border-l-transparent hover:border-l-neutral-300 cursor-pointer text-white/90"
@@ -54,7 +54,7 @@ export default function Home() {
       <div className="flex-1 border-l max-h-full overflow-auto">
         <div className="flex flex-col">
           {compsData.groups.map(({ label, comps }, i) => (
-            <div className="flex flex-col">
+            <div key={label} className="flex flex-col">
               <div className="border-y bg-[repeating-linear-gradient(135deg,rgba(255,255,255,0.03),rgba(255,255,255,0.03)_7px,transparent_7px,transparent_14px)]">
                 <div className="font-semibold uppercase text-lg text-white p-6 rounded leading-none">
                   {label} Comps
@@ -63,6 +63,7 @@ export default function Home() {
               <div className="flex flex-col">
                 {comps.map((it) => (
                   <div
+                    key={makeUniqueCompId(it)}
                     id={makeUniqueCompId(it)}
                     className="flex flex-col lg:flex-row gap-4 p-6 border-t first:border-t-0"
                   >

@@ -1,13 +1,9 @@
-import Markdown from "react-markdown";
-import { EarlyGameLeveling } from "../../data/types";
 import { StripedBackgroundTitle } from "@/components/StripedBackgroundTitle";
+import { earlyGameLeveling } from "@/handbook";
+import Markdown from "react-markdown";
 import { twMerge } from "tailwind-merge";
 
-type Props = {
-  earlyGameLeveling: EarlyGameLeveling;
-};
-
-export function EarlyGameLevelingView({ earlyGameLeveling }: Props) {
+export function EarlyGameLevelingView() {
   return (
     <div className="h-full w-full overflow-auto min-h-0">
       <div className="flex flex-col">

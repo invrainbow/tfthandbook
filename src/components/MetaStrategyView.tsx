@@ -1,13 +1,8 @@
-import { zip } from "radash";
-import { MetaStrategy } from "../../data/types";
+import { metaStrategy } from "@/handbook";
 import { Column, MetaStrategyTable } from "./MetaStrategyTable";
 import { StripedBackgroundTitle } from "./StripedBackgroundTitle";
 
-type Props = {
-  metaStrategy: MetaStrategy;
-};
-
-export function MetaStrategyView({ metaStrategy }: Props) {
+export function MetaStrategyView() {
   const augmentsList: Column[] = [
     {
       label: <span className="text-slate-400">Silver Augments</span>,

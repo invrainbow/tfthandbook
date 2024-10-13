@@ -1,17 +1,14 @@
 import { StripedBackgroundTitle } from "@/components/StripedBackgroundTitle";
 import Markdown from "react-markdown";
-import { Comp, CompsList } from "../../data/types";
 import { twMerge } from "tailwind-merge";
-
-type Props = {
-  compsList: CompsList;
-};
+import { Comp } from "../../data/types";
+import { compsList } from "@/handbook";
 
 function makeUniqueCompId(comp: Comp) {
   return "comp-" + comp.name.toLowerCase().replace(" ", "-");
 }
 
-export function CompsListView({ compsList }: Props) {
+export function CompsListView() {
   const onScroll = (comp: Comp) => {
     const el = document.getElementById(makeUniqueCompId(comp));
     if (el) {

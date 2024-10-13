@@ -1,15 +1,10 @@
+import { handbookData } from "@/handbook";
 import { BoxesIcon, ChevronsUpIcon, CrownIcon, LucideIcon } from "lucide-react";
 import { useState } from "react";
-
-import { HandbookData } from "../../data/types";
+import { twMerge } from "tailwind-merge";
 import { CompsListView } from "./CompsListView";
 import { EarlyGameLevelingView } from "./EarlyGameLevelingView";
 import { MetaStrategyView } from "./MetaStrategyView";
-import { twMerge } from "tailwind-merge";
-
-type Props = {
-  handbookData: HandbookData;
-};
 
 type Tab = "comps" | "meta" | "early_game_leveling";
 
@@ -49,7 +44,7 @@ const TAB_INFO: TabInfo[] = [
   },
 ];
 
-export function IndexView({ handbookData }: Props) {
+export function IndexView() {
   const [currentTab, setCurrentTab] = useState<Tab>("comps");
 
   return (
@@ -77,17 +72,9 @@ export function IndexView({ handbookData }: Props) {
         )}
       </div>
       <div className="flex-1 min-h-0">
-        {currentTab === "comps" && (
-          <CompsListView compsList={handbookData.compsList} />
-        )}
-        {currentTab === "meta" && (
-          <MetaStrategyView metaStrategy={handbookData.metaStrategy} />
-        )}
-        {currentTab === "early_game_leveling" && (
-          <EarlyGameLevelingView
-            earlyGameLeveling={handbookData.earlyGameLeveling}
-          />
-        )}
+        {currentTab === "comps" && <CompsListView />}
+        {currentTab === "meta" && <MetaStrategyView />}
+        {currentTab === "early_game_leveling" && <EarlyGameLevelingView />}
       </div>
     </div>
   );

@@ -1,7 +1,18 @@
 import { promises as fs } from "fs";
 import { JSDOM } from "jsdom";
-import { AllComps, Comp, CompGroup, TextBlurb } from "./types";
-import { find, findAll, orThrow, readFileIfExists } from "./utils";
+import {
+  CompsList,
+  Comp,
+  CompGroup,
+  TextBlurb,
+  HandbookData,
+  EarlyGameLeveling,
+  MetaStrategy,
+  StrongAugments,
+  FlowChartItem,
+} from "./types";
+import { assert, find, findAll, orThrow, readFileIfExists } from "./utils";
+import { NodeHtmlMarkdown, NodeHtmlMarkdownOptions } from "node-html-markdown";
 
 const HANDBOOK_PAGE_CACHE = "tfthandbook.html";
 
@@ -16,49 +27,55 @@ async function getHandbookPage() {
   return htmlString;
 }
 
-// this is the .eael-accordion-list node
-function parseComp(
-  node: Element,
-  headerImageLookup: Record<string, string>
-): Comp {
-  const name = find(node, ".eael-accordion-tab-title").textContent!;
-  const diagramUrl = find(node, "img").getAttribute("src")!;
+function parseTextBlurb(node: Element): TextBlurb {
+  const ret: TextBlurb = { sections: [] };
 
-  const description: TextBlurb = { sections: [] };
-
-  const descriptionNodes = Array.from(findAll(node, "p, .elementor-divider"));
-  if (descriptionNodes.length !== 0) {
-    while (descriptionNodes[0].classList.contains("elementor-divider")) {
-      descriptionNodes.splice(0, 1);
+  const textNodes = Array.from(findAll(node, "p, .elementor-divider"));
+  if (textNodes.length !== 0) {
+    while (textNodes[0].classList.contains("elementor-divider")) {
+      textNodes.splice(0, 1);
     }
 
     const descriptionParts: string[][] = [[]];
     let part: string[] = descriptionParts[0];
 
-    for (const it of descriptionNodes) {
-      if (it.tagName === "P") {
-        part.push(it.textContent!);
-      } else {
-        part = [];
-        descriptionParts.push(part);
+    for (const it of textNodes) {
+      if (it.tagName === "P" && it.textContent) {
+        const content = it.textContent.trim();
+        if (content.length > 0) {
+          part.push(content);
+          continue;
+        }
       }
+
+      part = [];
+      descriptionParts.push(part);
     }
 
-    description.sections = descriptionParts.map((it) => it.join("\n\n"));
+    ret.sections = descriptionParts.map((it) => it.join("\n\n"));
   }
+
+  return ret;
+}
+
+// this is the .eael-accordion-list node
+function parseComp(node: Element, headerLookup: Record<string, string>): Comp {
+  const name = find(node, ".eael-accordion-tab-title").textContent!;
+  const diagramUrl = find(node, "img").getAttribute("src")!;
+  const description = parseTextBlurb(node);
 
   const parent = node.closest(".e-loop-item") ?? orThrow("parent not found");
   const idMatch =
     parent.className.match(/e-loop-item-([0-9]+)/) ??
     orThrow("couldn't get parent id");
-  const headerImageUrl = headerImageLookup[idMatch[1]];
+  const headerImageUrl = headerLookup[idMatch[1]];
 
   return { name, diagramUrl, description, headerImageUrl };
 }
 
-function parseCompsList(node: Element): AllComps {
+function parseCompsList(node: Element): CompsList {
   const styleNodes = findAll(node, "style");
-  const headerImageLookup: Record<string, string> = {};
+  const headerLookup: Record<string, string> = {};
 
   styleNodes.forEach((it) => {
     const textContent = it.textContent ?? orThrow("shit fucked up");
@@ -66,7 +83,7 @@ function parseCompsList(node: Element): AllComps {
     const urlMatch = textContent.match(/url\("([^"]+)"\)/);
 
     if (idMatch && urlMatch) {
-      headerImageLookup[idMatch[1]] = urlMatch[1];
+      headerLookup[idMatch[1]] = urlMatch[1];
     }
   });
 
@@ -92,11 +109,88 @@ function parseCompsList(node: Element): AllComps {
       groups.push(currentGroup);
     } else {
       // an h2 will always come first, so currentGroup will be set
-      currentGroup!.comps.push(parseComp(it, headerImageLookup));
+      currentGroup!.comps.push(parseComp(it, headerLookup));
     }
   }
 
   return { groups };
+}
+
+function parseEarlyGameLeveling(node: Element): EarlyGameLeveling {
+  const titleNodes = findAll(node, "h2.elementor-heading-title");
+  const titleNode =
+    Array.from(titleNodes).find(
+      (it) => it.textContent === "Early Game Leveling"
+    ) ?? orThrow("unable to find early game leveling title");
+
+  const earlyGameLevelingNode =
+    titleNode.closest(".e-n-tabs-content") ?? orThrow("unable to get content");
+
+  const sectionNodes = findAll(earlyGameLevelingNode, ".eael-accordion-list");
+
+  const sections = Array.from(sectionNodes).map((it) => {
+    const stage =
+      find(it, ".elementor-tab-title")?.textContent ??
+      orThrow("couldn't find title");
+
+    const contentNode =
+      find(it, ".eael-accordion-content") ?? orThrow("couldn't find content");
+
+    const content = NodeHtmlMarkdown.translate(contentNode.innerHTML);
+    return { stage, content: { sections: [content] } };
+  });
+
+  return { sections };
+}
+
+function parseMetaStrategy(node: Element): MetaStrategy {
+  const strategyNodes = Array.from(findAll(node, ".meta-strategy"));
+  assert(strategyNodes.length === 2, `expected 2 strategy nodes`);
+
+  const strongAugmentsNode = strategyNodes[0];
+
+  const silverAugments: string[] = [];
+  const goldAugments: string[] = [];
+  const prismaticAugments: string[] = [];
+
+  {
+    const rowNodes = findAll(strongAugmentsNode, "tr");
+    for (const it of Array.from(rowNodes).slice(1)) {
+      const cellNodes = findAll(it, "td");
+      assert(cellNodes.length === 3, "expected 3 cells per row");
+
+      const silverAugment = cellNodes[0].textContent?.trim();
+      const goldAugment = cellNodes[1].textContent?.trim();
+      const prismaticAugment = cellNodes[2].textContent?.trim();
+
+      if (silverAugment) silverAugments.push(silverAugment);
+      if (goldAugment) goldAugments.push(goldAugment);
+      if (prismaticAugment) prismaticAugments.push(prismaticAugment);
+    }
+  }
+
+  const flowChartNode = strategyNodes[1];
+  const flowChartItems: FlowChartItem[] = [];
+
+  {
+    const rowNodes = findAll(flowChartNode, "tr");
+    for (const it of Array.from(rowNodes).slice(1)) {
+      const cellNodes = findAll(it, "td");
+      assert(cellNodes.length === 2, "expected 2 cells per row");
+
+      const augment = cellNodes[0].textContent?.trim();
+      const whatToPlay = cellNodes[1].textContent?.trim();
+
+      if (augment && whatToPlay) {
+        flowChartItems.push({ augment, whatToPlay });
+      }
+    }
+  }
+
+  return {
+    strongAugments: { silverAugments, goldAugments, prismaticAugments },
+    flowChart: flowChartItems,
+  };
 }
 
 async function main() {
@@ -124,9 +218,21 @@ async function main() {
     find(tabsContentNode, `#e-n-tab-content-${tabIdLookup[tabName]}`);
 
   const compsListContentNode = getTabContentNodeById("comps list");
-  const allComps = parseCompsList(compsListContentNode);
+  const compsList = parseCompsList(compsListContentNode);
 
-  await fs.writeFile("src/data.json", JSON.stringify(allComps, null, 2));
+  const metaStrategyContentNode = getTabContentNodeById("meta strategy");
+  const metaStrategy = parseMetaStrategy(metaStrategyContentNode);
+
+  const guidesContentNode = getTabContentNodeById("guides");
+  const earlyGameLeveling = parseEarlyGameLeveling(guidesContentNode);
+
+  const handbookData: HandbookData = {
+    compsList,
+    metaStrategy,
+    earlyGameLeveling,
+  };
+
+  await fs.writeFile("src/data.json", JSON.stringify(handbookData, null, 2));
 }
 
 main();

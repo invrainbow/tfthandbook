@@ -22,3 +22,9 @@ export function find(el: Document | Element, selector: string) {
 export function findAll(el: Document | Element, selector: string) {
   return el.querySelectorAll(selector);
 }
+
+export function assert(cond: any, message: string) {
+  if (!cond) {
+    throw new Error(message);
+  }
+}

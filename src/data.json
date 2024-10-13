@@ -1,368 +1,541 @@
 {
-  "groups": [
-    {
-      "label": "Standard",
-      "comps": [
-        {
-          "name": "4 Warrior",
-          "diagramUrl": "https://tfthandbook.com/wp-content/uploads/2024/08/4-warrior-1-1024x452.png",
-          "description": {
-            "sections": [
-              "When to Play:\n\nMelee items slammed",
-              "How to Play:\n\nlevel 8 roll for 4 warrior + preservers\n\nGo 9, replace lilia hecarim for Milio Morg and Zilean",
-              "Items:\n\nFiora: BT Steraks + 1\n\nGwen: BB + JG + 1 (HOJ, GUNBLADE, BT, CROWNGUARD, RABADON, GS, GUARDBREAKER)\n\nKat: JG HOJ"
-            ]
+  "compsList": {
+    "groups": [
+      {
+        "label": "Standard",
+        "comps": [
+          {
+            "name": "4 Warrior",
+            "diagramUrl": "https://tfthandbook.com/wp-content/uploads/2024/08/4-warrior-1-1024x452.png",
+            "description": {
+              "sections": [
+                "When to Play:\n\nMelee items slammed",
+                "How to Play:\n\nlevel 8 roll for 4 warrior + preservers\n\nGo 9, replace lilia hecarim for Milio Morg and Zilean",
+                "Items:\n\nFiora: BT Steraks + 1\n\nGwen: BB + JG + 1 (HOJ, GUNBLADE, BT, CROWNGUARD, RABADON, GS, GUARDBREAKER)\n\nKat: JG HOJ"
+              ]
+            },
+            "headerImageUrl": "https://tfthandbook.com/wp-content/uploads/2024/08/gwen-e1725129723397.jpg"
           },
-          "headerImageUrl": "https://tfthandbook.com/wp-content/uploads/2024/08/gwen-e1725129723397.jpg"
-        },
-        {
-          "name": "Arcana Varus",
-          "diagramUrl": "https://tfthandbook.com/wp-content/uploads/2024/09/arcana-varus-1-1024x462.png",
-          "description": {
-            "sections": [
-              "When to Play:\n\nAD items, no guinsoo",
-              "How to Play:\n\nLevel 8 roll for above board. Play preserver before Xerath\n\nArcana Tahm, Hecarim if you need more damage",
-              "Items:\n\nVarus: Redbuff + IE + 1 (double IE is best, can also use SHOJIN, LW, DB, GS, RUNAANS)\n\nTahm: Vow + Evenshroud + 1"
-            ]
+          {
+            "name": "Arcana Varus",
+            "diagramUrl": "https://tfthandbook.com/wp-content/uploads/2024/09/arcana-varus-1-1024x462.png",
+            "description": {
+              "sections": [
+                "When to Play:\n\nAD items, no guinsoo",
+                "How to Play:\n\nLevel 8 roll for above board. Play preserver before Xerath\n\nArcana Tahm, Hecarim if you need more damage",
+                "Items:\n\nVarus: Redbuff + IE + 1 (double IE is best, can also use SHOJIN, LW, DB, GS, RUNAANS)\n\nTahm: Vow + Evenshroud + 1"
+              ]
+            },
+            "headerImageUrl": "https://tfthandbook.com/wp-content/uploads/2024/09/TahmKench_11-e1726729581625.jpg"
           },
-          "headerImageUrl": "https://tfthandbook.com/wp-content/uploads/2024/09/TahmKench_11-e1726729581625.jpg"
-        },
-        {
-          "name": "Faerie Kalista",
-          "diagramUrl": "https://tfthandbook.com/wp-content/uploads/2024/08/faerie-kalista-3-1024x474.png",
-          "description": {
-            "sections": [
-              "When to Play:\n\nFaerie opener / Guinsoo",
-              "How to Play:\n\nGo level 8, play 5 faerie + hec + jax + zilean.\n\nIf you have a spat, drop Tristana for another preserver or arcana\n\nGo 9, replace Tristana with Milio, replace Jax with Camille, play more preserver/arcana",
-              "Items:\n\nKalista: Guinsoo x2 (LW, RUNAANS, REDBUFF, DB, IE also work)\n\nRakan: Warmogs + 1 (Gargoyle, Steadfast, Adaptive, DCLAW, Bramble, etc)\n\nHecarim: Evenshroud"
-            ]
+          {
+            "name": "Faerie Kalista",
+            "diagramUrl": "https://tfthandbook.com/wp-content/uploads/2024/08/faerie-kalista-3-1024x474.png",
+            "description": {
+              "sections": [
+                "When to Play:\n\nFaerie opener / Guinsoo",
+                "How to Play:\n\nGo level 8, play 5 faerie + hec + jax + zilean.\n\nIf you have a spat, drop Tristana for another preserver or arcana\n\nGo 9, replace Tristana with Milio, replace Jax with Camille, play more preserver/arcana",
+                "Items:\n\nKalista: Guinsoo x2 (LW, RUNAANS, REDBUFF, DB, IE also work)\n\nRakan: Warmogs + 1 (Gargoyle, Steadfast, Adaptive, DCLAW, Bramble, etc)\n\nHecarim: Evenshroud"
+              ]
+            },
+            "headerImageUrl": "https://tfthandbook.com/wp-content/uploads/2024/08/Kalista_14-1-e1726729852236.jpg"
           },
-          "headerImageUrl": "https://tfthandbook.com/wp-content/uploads/2024/08/Kalista_14-1-e1726729852236.jpg"
-        },
-        {
-          "name": "Karma Flex",
-          "diagramUrl": "https://tfthandbook.com/wp-content/uploads/2024/07/Karma-Fiora-1024x461.png",
-          "description": {
-            "sections": [
-              "When to Play:\n\nAP opener",
-              "How to Play:\n\nFast 8, roll for Karma Bard Zilean Gwen Fiora + x. Can play Taric/Diana, Morg/Rakan, Neeko/Nasus/Briar/Swain",
-              "Items:\n\nKarma: Morello + Shiv\n\nFiora: AD items\n\nGwen: BB + AP\n\nNasus/Rakan: Tank"
-            ]
+          {
+            "name": "Karma Flex",
+            "diagramUrl": "https://tfthandbook.com/wp-content/uploads/2024/07/Karma-Fiora-1024x461.png",
+            "description": {
+              "sections": [
+                "When to Play:\n\nAP opener",
+                "How to Play:\n\nFast 8, roll for Karma Bard Zilean Gwen Fiora + x. Can play Taric/Diana, Morg/Rakan, Neeko/Nasus/Briar/Swain",
+                "Items:\n\nKarma: Morello + Shiv\n\nFiora: AD items\n\nGwen: BB + AP\n\nNasus/Rakan: Tank"
+              ]
+            },
+            "headerImageUrl": "https://tfthandbook.com/wp-content/uploads/2024/07/Karma_44-e1721799613266.jpg"
           },
-          "headerImageUrl": "https://tfthandbook.com/wp-content/uploads/2024/07/Karma_44-e1721799613266.jpg"
-        },
-        {
-          "name": "Scholar Ryze",
-          "diagramUrl": "https://tfthandbook.com/wp-content/uploads/2024/08/scholar-ryze-1024x450.png",
-          "description": {
-            "sections": [
-              "When to Play:\n\nAP opener",
-              "How to Play:\n\nLevel 8 roll for 4 scholar + Taric + frontline. Can play bastion with Taric, Rakan, Morg.\n\nArcana Tahm",
-              "Items:\n\nRyze: Attack Speed + AP\n\nTaric/Rakan/Tahm: Tank\n\n "
-            ]
+          {
+            "name": "Scholar Ryze",
+            "diagramUrl": "https://tfthandbook.com/wp-content/uploads/2024/08/scholar-ryze-1024x450.png",
+            "description": {
+              "sections": [
+                "When to Play:\n\nAP opener",
+                "How to Play:\n\nLevel 8 roll for 4 scholar + Taric + frontline. Can play bastion with Taric, Rakan, Morg.\n\nArcana Tahm",
+                "Items:\n\nRyze: Attack Speed + AP\n\nTaric/Rakan/Tahm: Tank",
+                ""
+              ]
+            },
+            "headerImageUrl": "https://tfthandbook.com/wp-content/uploads/2024/08/Ryze_11-e1724030590565.jpg"
+          }
+        ]
+      },
+      {
+        "label": "Emblem",
+        "comps": [
+          {
+            "name": "6 Blaster",
+            "diagramUrl": "https://tfthandbook.com/wp-content/uploads/2024/09/6-blaster-1024x463.png",
+            "description": {
+              "sections": [
+                "When to Play:\n\nBlaster + 1",
+                "How to Play:\n\nGo level 8 and roll for 5 blaster + hec shen tahm. Replace Hwei with Smolder.\n\nCap board with Xerath.\n\nArcana charm on Hecarim",
+                "Items:\n\nVarus: Shojin IE + 1 (LW, DB, IE, Shojin)\n\nLeftover AD items on Ezreal\n\nTank items on Tahm"
+              ]
+            },
+            "headerImageUrl": "https://tfthandbook.com/wp-content/uploads/2024/09/Ezreal_3-1-e1727111907530.jpg"
           },
-          "headerImageUrl": "https://tfthandbook.com/wp-content/uploads/2024/08/Ryze_11-e1724030590565.jpg"
-        }
+          {
+            "name": "6 Sugarcraft",
+            "diagramUrl": "https://tfthandbook.com/wp-content/uploads/2024/07/vertical-sugarcraft-1024x455.png",
+            "description": {
+              "sections": [
+                "When to Play:\n\nSugarcraft emblem or augment",
+                "How to Play:\n\nFast 8 and roll for 5 sugarcraft + fiora + tahm + morgana. Can play Rakan before Morgana\n\nSugarcraft emblem on fiora",
+                "Items:\n\nGwen: BB + AP + HEALING\n\nTahm: Tank items\n\nFiora: AD items"
+              ]
+            },
+            "headerImageUrl": "https://tfthandbook.com/wp-content/uploads/2024/07/Gwen_11-e1721809259633.jpg"
+          },
+          {
+            "name": "6 Warrior",
+            "diagramUrl": "https://tfthandbook.com/wp-content/uploads/2024/09/6-warrior-1024x456.png",
+            "description": {
+              "sections": []
+            },
+            "headerImageUrl": "https://tfthandbook.com/wp-content/uploads/2024/09/Fiora_60-1-e1727466101436.jpg"
+          },
+          {
+            "name": "6 Witchcraft",
+            "diagramUrl": "https://tfthandbook.com/wp-content/uploads/2024/07/witchcraft-karma-1024x451.png",
+            "description": {
+              "sections": [
+                "When to Play:\n\nWitchcraft emblem or augment",
+                "How to Play:\n\nGo level 8 play 5 witchcraft + karma/ryze + bastion/shapeshifter/scholar\n\nCap board with Morgana + Preservers",
+                "Items:\n\nKarma: BB Morello + Witchcraft emblem\n\nRyze: Attack Speed + AP + witchcraft emblem\n\nFiora: AD items\n\nTaric/Neeko/Nasus: Tank items"
+              ]
+            },
+            "headerImageUrl": "https://tfthandbook.com/wp-content/uploads/2024/07/Morgana_11-e1722409297180.jpg"
+          },
+          {
+            "name": "7 Eldritch",
+            "diagramUrl": "https://tfthandbook.com/wp-content/uploads/2024/07/7-eldrich.png",
+            "description": {
+              "sections": [
+                "When to Play:\n\nEldrich augment or emblem",
+                "How to Play:\n\nFast 8, play 6 eldritch + x. Can play Gwen/Fiora or Galio+Mage or Karma",
+                "Items:\n\nNami: Shojin + AP\n\nMorde/Tahm: Tank"
+              ]
+            },
+            "headerImageUrl": "https://tfthandbook.com/wp-content/uploads/2024/07/Nami_51-e1721800274798.jpg"
+          },
+          {
+            "name": "7 Frost",
+            "diagramUrl": "https://tfthandbook.com/wp-content/uploads/2024/07/7-frost-1-1024x455.png",
+            "description": {
+              "sections": [
+                "When to Play:\n\nFrost augment / emblem",
+                "How to Play:\n\nGo fast 8, play 7 frost + varus + nasus. Can also play shen instead of nasus.\n\nReplace Warwick with Diana",
+                "Items:\n\nVarus: Shojin + AD\n\nNasus/Swain/Shen: Tank\n\nHwei: AP items"
+              ]
+            },
+            "headerImageUrl": "https://tfthandbook.com/wp-content/uploads/2024/07/Olaf_2-e1721893265164.jpg"
+          },
+          {
+            "name": "8 Portal Ryze",
+            "diagramUrl": "https://tfthandbook.com/wp-content/uploads/2024/07/portal-ryze-1-1024x461.png",
+            "description": {
+              "sections": [
+                "When to Play:\n\nPortal Emblem/Augment",
+                "How to Play:\n\nGo 8 and play 8 portal + 1. Can be Diana/Briar/Tahm/Nami/Nasus",
+                "",
+                "Items:\n\nRyze: Redbuff + AP\n\nTaric: Tank"
+              ]
+            },
+            "headerImageUrl": "https://tfthandbook.com/wp-content/uploads/2024/07/Ryze_5-e1721834411686.jpg"
+          },
+          {
+            "name": "Chrono Karma",
+            "diagramUrl": "https://tfthandbook.com/wp-content/uploads/2024/09/chrono-karma.png",
+            "description": {
+              "sections": [
+                "When to Play:\n\nChrono Emblem",
+                "How to Play:\n\nGo level 8 play 6 chrono + x. Can be preservers, gwen + fiora, nasus+neeko, incantor, etc\n\nPlay 4 chrono + x before you hit Camille",
+                "Items:\n\nKarma: BB Morello + 1\n\nRakan: Tank"
+              ]
+            },
+            "headerImageUrl": "https://tfthandbook.com/wp-content/uploads/2024/09/Zilean_14-e1726128317148.jpg"
+          },
+          {
+            "name": "Pyro Varus",
+            "diagramUrl": "https://tfthandbook.com/wp-content/uploads/2024/07/pyro-varus-1024x467.png",
+            "description": {
+              "sections": [
+                "When to Play:\n\nPyro + 1",
+                "How to Play:\n\nFast 8, roll for 5 pyro (if pyro spat) + arcana + rumble\n\nBoard above is ideal board.\n\nCan play any shape before Briar and Pyro spat on Hecarim. Can also play Pyro Camille.",
+                "",
+                "Items:\n\nVarus: Shojin IE + 1\n\nNasus/Tahm/Shen: Tank items",
+                ""
+              ]
+            },
+            "headerImageUrl": "https://tfthandbook.com/wp-content/uploads/2024/07/Varus_9-e1721798976309.jpg"
+          }
+        ]
+      },
+      {
+        "label": "Reroll",
+        "comps": [
+          {
+            "name": "Ashe Reroll",
+            "diagramUrl": "https://tfthandbook.com/wp-content/uploads/2024/07/ashe-reroll-1024x462.png",
+            "description": {
+              "sections": [
+                "When to Play:\n\nLots of Ashe/Jax, lots of bows / pandoras",
+                "How to Play:\n\nSlowroll level 5 for Ashe 3 > Jax 3\n\nPush levels for 7 multi\n\nCan play arcana before Camille",
+                "Items:\n\nAshe: Guinsoo + Runaans + LW/Redbuff\n\nJax: Tank items\n\nLeftover AD items on Hec/Kalista"
+              ]
+            },
+            "headerImageUrl": "https://tfthandbook.com/wp-content/uploads/2024/07/Ashe_32-e1726126177841.jpg"
+          },
+          {
+            "name": "Bastion Ahri",
+            "diagramUrl": "https://tfthandbook.com/wp-content/uploads/2024/08/bastion-ahri-1-1024x462.png",
+            "description": {
+              "sections": [
+                "When to Play:\n\nLots of Zoe, Poppy, Lilia copies, reroll augment preferred",
+                "How to Play:\n\nLevel 5 slowroll for Lilia 3 > Zoe 3 > Poppy 3\n\nGo level 6/7 and slowroll for Ahri 3\n\nPush levels for 4 bastion 4 scholar + arcana",
+                "Items:\n\nAhri: BB NASHOR JG/RABADON\n\nLillia: Tank"
+              ]
+            },
+            "headerImageUrl": "https://tfthandbook.com/wp-content/uploads/2024/08/Ahri_66-e1723653649101.jpg"
+          },
+          {
+            "name": "Blaster Reroll",
+            "diagramUrl": "https://tfthandbook.com/wp-content/uploads/2024/09/blaster-reroll-1024x459.png",
+            "description": {
+              "sections": [
+                "When to Play:\n\nLots of Ezreal/Hwei , reroll augment",
+                "How to Play:\n\nGo level 7, play 4 blaster 4 vanguard.\n\nReroll Ezreal 3 > Hwei 3 > Morde 3",
+                "Items:\n\nEzreal: IE LW + 1 (Redbuff, Shojin, Hoj, BT, DB, GS)\n\nHwei: Mana + AP\n\nMorde: Tank"
+              ]
+            },
+            "headerImageUrl": "https://tfthandbook.com/wp-content/uploads/2024/09/Ezreal_3-e1726126792613.jpg"
+          },
+          {
+            "name": "Jinx Reroll",
+            "diagramUrl": "https://tfthandbook.com/wp-content/uploads/2024/07/jinx-reroll-1-1024x452.png",
+            "description": {
+              "sections": [
+                "When to Play:\n\nGuinsoo Opener + Gargoyle Wukong",
+                "How to Play:\n\nGo level 7, roll 4 hunter + Wukong + Bard + Zilean\n\n3 star Jinx > Wukong > push levels\n\nLevel for more preservers",
+                "Items:\n\nJinx: Guinsoo LW Runaans\n\nWukong: Gargoyle Gargoyle Redemption\n\nOlaf: BT Steraks"
+              ]
+            },
+            "headerImageUrl": "https://tfthandbook.com/wp-content/uploads/2024/07/Jinx_51-e1721801311943.jpg"
+          },
+          {
+            "name": "Kassadin Reroll",
+            "diagramUrl": "https://tfthandbook.com/wp-content/uploads/2024/10/kassadin-reroll-1024x454.png",
+            "description": {
+              "sections": [
+                "When to Play:\n\nSupport augments / lots of Kassadins",
+                "How to Play:\n\nLevel 6 slowroll for Kassadin 3 -> Akali 3 -> push levels for 7 multi\n\nPlay arcana before 7 multi",
+                "Items:\n\nKassadin: Titans BT + 1 (Nashor, QSS, Guinsoo)\n\nAkali/Hecarim: Leftover AD items"
+              ]
+            },
+            "headerImageUrl": "https://tfthandbook.com/wp-content/uploads/2024/10/Kassadin_5-1-e1728725280130.jpg"
+          },
+          {
+            "name": "Kogmaw Reroll",
+            "diagramUrl": "https://tfthandbook.com/wp-content/uploads/2024/07/kogmaw-reroll-1-1024x462.png",
+            "description": {
+              "sections": [
+                "When to Play:\n\nLots of kogs, reroll augment",
+                "How to Play:\n\nGo level 6, roll for above board minus olaf\n\nHit Kogmaw 3 > Nunu3 > Rumble 3 > push levels for 4 hunter\n\nCan roll for Jinx 3, or push levels for Bastion",
+                "Items:\n\nKog: Shojin Redbuff LW\n\nJinx: Guinsoo + Runaans\n\nRumble/Nunu: Tank"
+              ]
+            },
+            "headerImageUrl": "https://tfthandbook.com/wp-content/uploads/2024/07/KogMaw_28-e1722241317175.jpg"
+          },
+          {
+            "name": "Soraka Seraphine Reroll",
+            "diagramUrl": "https://tfthandbook.com/wp-content/uploads/2024/10/soraka-sera-reroll-1024x455.png",
+            "description": {
+              "sections": [
+                "When to Play:\n\nLots of Soraka / Seraphines",
+                "How to Play:\n\nLevel 5 slowroll for Soraka 3 > Seraphine 3\n\nPush levels for vertical mage",
+                "Items:\n\nSoraka: Shojin + AP\n\nSeraphine: Shojin + AP\n\nVex: Tank"
+              ]
+            },
+            "headerImageUrl": "https://tfthandbook.com/wp-content/uploads/2024/10/soraka-e1728534257561.jpg"
+          },
+          {
+            "name": "Veigar Reroll",
+            "diagramUrl": "https://tfthandbook.com/wp-content/uploads/2024/07/veigar-reroll-1-1024x458.png",
+            "description": {
+              "sections": [
+                "When to Play:\n\nEarly Veigar/Vex + tear/rod",
+                "How to Play:\n\nGo level 7, play 5 mage + Morde + Zilean. Can also play Nunu+Blitz for 3 honey\n\nRoll for Veigar 3 > Vex 3 , push levels for Yuumi",
+                "Items:\n\nVeigar: BB Nashor Shojin or AP\n\nVex: Spark + Tank"
+              ]
+            },
+            "headerImageUrl": "https://tfthandbook.com/wp-content/uploads/2024/07/Veigar_51-e1722411778939.jpg"
+          },
+          {
+            "name": "Warwick Reroll",
+            "diagramUrl": "https://tfthandbook.com/wp-content/uploads/2024/09/warwick-reroll-1024x459.png",
+            "description": {
+              "sections": [
+                "When to Play:\n\nVampiric Scepter Ornn item",
+                "How to Play:\n\nLevel 5 roll for Warwick 3 > Blitz 3 > Twitch 3\n\nPush levels for 6 vanguard",
+                "Items:\n\nWarwick: Vamp Scepter + Guinsoo + Titans/QSS\n\nBlitz: Tank\n\nTwitch: LW"
+              ]
+            },
+            "headerImageUrl": "https://tfthandbook.com/wp-content/uploads/2024/09/Warwick_4-e1726127353941.jpg"
+          },
+          {
+            "name": "Ziggs Reroll",
+            "diagramUrl": "https://tfthandbook.com/wp-content/uploads/2024/09/ziggs-reroll-1-1024x463.png",
+            "description": {
+              "sections": [
+                "When to Play:\n\nLots of Ziggs/Blitz",
+                "How to Play:\n\nLevel 5, roll for Ziggs 3 > Blitz 3, push levels for Arcana\n\nCan roll for Veigar 3 on 7 if uncontested",
+                "Items:\n\nZiggs: BB JG + 1\n\nVeigar: Leftover AP items\n\nBlitz: Tank"
+              ]
+            },
+            "headerImageUrl": "https://tfthandbook.com/wp-content/uploads/2024/09/Ziggs_24-e1726126406480.jpg"
+          }
+        ]
+      },
+      {
+        "label": "Hero",
+        "comps": [
+          {
+            "name": "Dejavu Galio",
+            "diagramUrl": "https://tfthandbook.com/wp-content/uploads/2024/07/dejavu-galio-1024x453.png",
+            "description": {
+              "sections": [
+                "When to Play:\n\nDejavu hero augment",
+                "How to Play:\n\nGo level 6, roll for Galio 3, push levels for 4 vanguard + x",
+                "Items:\n\nGalio: Guinsoo x 2 + Gunblade\n\nMorde/Rumble: Tank items"
+              ]
+            },
+            "headerImageUrl": "https://tfthandbook.com/wp-content/uploads/2024/07/Galio_1-e1721892934705.jpg"
+          },
+          {
+            "name": "Molten Caramel Rumble",
+            "diagramUrl": "https://tfthandbook.com/wp-content/uploads/2024/08/molten-caramel-rumble-1024x450.png",
+            "description": {
+              "sections": [
+                "When to Play:\n\nMolten Caramel Rumble Hero augment",
+                "How to Play:\n\nGo level 6, play 4 vanguard + trist + bard\n\nSlowroll for Rumble 3 > Trist 3 > Galio 3\n\nPush levels for preservers",
+                "Items:\n\nRumble: BT + AP\n\nTrist: AD\n\nGalio: Tank"
+              ]
+            },
+            "headerImageUrl": "https://tfthandbook.com/wp-content/uploads/2024/08/rumble-e1723652691774.jpg"
+          },
+          {
+            "name": "Sweet Tooth Nunu",
+            "diagramUrl": "https://tfthandbook.com/wp-content/uploads/2024/07/sweet-tooth-nunu-2-1024x471.png",
+            "description": {
+              "sections": [
+                "When to Play:\n\nSweet Tooth hero augment",
+                "How to Play:\n\nLevel 6 play 5 Honey + Bastion\n\nRoll for Nunu 3 > Kog 3 > level up and can roll for Veigar 3.\n\nPush levels for more bastions",
+                "Items:\n\nNunu: Warmogs BT AA/Crownguard\n\nVeigar: AP items\n\nKog: AD items"
+              ]
+            },
+            "headerImageUrl": "https://tfthandbook.com/wp-content/uploads/2024/07/Nunu_26-e1721809423599.jpg"
+          },
+          {
+            "name": "Witchy Wallop Poppy",
+            "diagramUrl": "https://tfthandbook.com/wp-content/uploads/2024/08/witch-wallop-poppy-1024x450.png",
+            "description": {
+              "sections": [
+                "When to Play:\n\nWitchy Wallop Hero Augment",
+                "How to Play:\n\nLevel 5, slowroll for Poppy 3 > Zoe 3 > Lilia 3\n\nPush levels for 4 Bastion + 4 Scholar + Arcana",
+                "Items:\n\nPoppy: BT Steraks IE\n\nZoe: AP items\n\nLilia: Tank items"
+              ]
+            },
+            "headerImageUrl": "https://tfthandbook.com/wp-content/uploads/2024/08/poppy-e1723653018968.jpg"
+          },
+          {
+            "name": "Zap Attack Blitzcrank",
+            "diagramUrl": "https://tfthandbook.com/wp-content/uploads/2024/07/ziggs-reroll-1024x463.png",
+            "description": {
+              "sections": [
+                "When to Play:\n\nZap Attack Hero Augment",
+                "How to Play:\n\nRoll for Blitz 3 > Ziggs 3, push levels for 5 honey + 3 mage\n\nCan roll for Veigar 3 if uncontested",
+                "Items:\n\nBlitz: Warmog Spark + 1 (Crownguard, Gargoyle)\n\nVeigar: AP items",
+                ""
+              ]
+            },
+            "headerImageUrl": "https://tfthandbook.com/wp-content/uploads/2024/07/Blitzcrank_56-e1721892474261.jpg"
+          }
+        ]
+      }
+    ]
+  },
+  "metaStrategy": {
+    "strongAugments": {
+      "silverAugments": [
+        "Missed Connections",
+        "Stationary Support",
+        "Exiles",
+        "Band of Thieves",
+        "Keepers",
+        "Caretakers Ally",
+        "Over Encumbered",
+        "Risky Moves",
+        "Iron Assets",
+        "Help Is On The Way",
+        "Precise Planning",
+        "Restart Mission",
+        "Good for something",
+        "Spoils of war 1"
+      ],
+      "goldAugments": [
+        "Slammin",
+        "Little Buddies",
+        "Combat Bandages",
+        "Unleash The Beast",
+        "Avenge The Fallen",
+        "Support Golem",
+        "Epoch",
+        "Wandering Trainer",
+        "Combat Caster",
+        "Inspiring Epitaph",
+        "Sleight of Hand",
+        "Double Down",
+        "Prizefighter",
+        "Raining Gold",
+        "What Doesn’t Kill You"
+      ],
+      "prismaticAugments": [
+        "Support Golem 2",
+        "Giant and Mighty",
+        "What The Forge",
+        "At What Cost",
+        "Living Forge",
+        "Level Up",
+        "Spellcasters Toolbox",
+        "Going Long",
+        "Immovable Object",
+        "Tiniest Titan",
+        "Upward Mobility",
+        "Phreaky Friday",
+        "Subscription Service"
       ]
     },
-    {
-      "label": "Emblem",
-      "comps": [
-        {
-          "name": "6 Blaster",
-          "diagramUrl": "https://tfthandbook.com/wp-content/uploads/2024/09/6-blaster-1024x463.png",
-          "description": {
-            "sections": [
-              "When to Play:\n\nBlaster + 1",
-              "How to Play:\n\nGo level 8 and roll for 5 blaster + hec shen tahm. Replace Hwei with Smolder.\n\nCap board with Xerath.\n\nArcana charm on Hecarim",
-              "Items:\n\nVarus: Shojin IE + 1 (LW, DB, IE, Shojin)\n\nLeftover AD items on Ezreal\n\nTank items on Tahm"
-            ]
-          },
-          "headerImageUrl": "https://tfthandbook.com/wp-content/uploads/2024/09/Ezreal_3-1-e1727111907530.jpg"
-        },
-        {
-          "name": "6 Sugarcraft",
-          "diagramUrl": "https://tfthandbook.com/wp-content/uploads/2024/07/vertical-sugarcraft-1024x455.png",
-          "description": {
-            "sections": [
-              "When to Play:\n\nSugarcraft emblem or augment",
-              "How to Play:\n\nFast 8 and roll for 5 sugarcraft + fiora + tahm + morgana. Can play Rakan before Morgana\n\nSugarcraft emblem on fiora",
-              "Items:\n\nGwen: BB + AP + HEALING\n\nTahm: Tank items\n\nFiora: AD items"
-            ]
-          },
-          "headerImageUrl": "https://tfthandbook.com/wp-content/uploads/2024/07/Gwen_11-e1721809259633.jpg"
-        },
-        {
-          "name": "6 Warrior",
-          "diagramUrl": "https://tfthandbook.com/wp-content/uploads/2024/09/6-warrior-1024x456.png",
-          "description": {
-            "sections": []
-          },
-          "headerImageUrl": "https://tfthandbook.com/wp-content/uploads/2024/09/Fiora_60-1-e1727466101436.jpg"
-        },
-        {
-          "name": "6 Witchcraft",
-          "diagramUrl": "https://tfthandbook.com/wp-content/uploads/2024/07/witchcraft-karma-1024x451.png",
-          "description": {
-            "sections": [
-              "When to Play:\n\nWitchcraft emblem or augment",
-              "How to Play:\n\nGo level 8 play 5 witchcraft + karma/ryze + bastion/shapeshifter/scholar\n\nCap board with Morgana + Preservers",
-              "Items:\n\nKarma: BB Morello + Witchcraft emblem\n\nRyze: Attack Speed + AP + witchcraft emblem\n\nFiora: AD items\n\nTaric/Neeko/Nasus: Tank items"
-            ]
-          },
-          "headerImageUrl": "https://tfthandbook.com/wp-content/uploads/2024/07/Morgana_11-e1722409297180.jpg"
-        },
-        {
-          "name": "7 Eldritch",
-          "diagramUrl": "https://tfthandbook.com/wp-content/uploads/2024/07/7-eldrich.png",
-          "description": {
-            "sections": [
-              "When to Play:\n\nEldrich augment or emblem",
-              "How to Play:\n\nFast 8, play 6 eldritch + x. Can play Gwen/Fiora or Galio+Mage or Karma",
-              "Items:\n\nNami: Shojin + AP\n\nMorde/Tahm: Tank"
-            ]
-          },
-          "headerImageUrl": "https://tfthandbook.com/wp-content/uploads/2024/07/Nami_51-e1721800274798.jpg"
-        },
-        {
-          "name": "7 Frost",
-          "diagramUrl": "https://tfthandbook.com/wp-content/uploads/2024/07/7-frost-1-1024x455.png",
-          "description": {
-            "sections": [
-              "When to Play:\n\nFrost augment / emblem",
-              "How to Play:\n\nGo fast 8, play 7 frost + varus + nasus. Can also play shen instead of nasus.\n\nReplace Warwick with Diana",
-              "Items:\n\nVarus: Shojin + AD\n\nNasus/Swain/Shen: Tank\n\nHwei: AP items"
-            ]
-          },
-          "headerImageUrl": "https://tfthandbook.com/wp-content/uploads/2024/07/Olaf_2-e1721893265164.jpg"
-        },
-        {
-          "name": "8 Portal Ryze",
-          "diagramUrl": "https://tfthandbook.com/wp-content/uploads/2024/07/portal-ryze-1-1024x461.png",
-          "description": {
-            "sections": [
-              "When to Play:\n\nPortal Emblem/Augment",
-              "How to Play:\n\nGo 8 and play 8 portal + 1. Can be Diana/Briar/Tahm/Nami/Nasus\n\n ",
-              "Items:\n\nRyze: Redbuff + AP\n\nTaric: Tank"
-            ]
-          },
-          "headerImageUrl": "https://tfthandbook.com/wp-content/uploads/2024/07/Ryze_5-e1721834411686.jpg"
-        },
-        {
-          "name": "Chrono Karma",
-          "diagramUrl": "https://tfthandbook.com/wp-content/uploads/2024/09/chrono-karma.png",
-          "description": {
-            "sections": [
-              "When to Play:\n\nChrono Emblem",
-              "How to Play:\n\nGo level 8 play 6 chrono + x. Can be preservers, gwen + fiora, nasus+neeko, incantor, etc\n\nPlay 4 chrono + x before you hit Camille",
-              "Items:\n\nKarma: BB Morello + 1\n\nRakan: Tank"
-            ]
-          },
-          "headerImageUrl": "https://tfthandbook.com/wp-content/uploads/2024/09/Zilean_14-e1726128317148.jpg"
-        },
-        {
-          "name": "Pyro Varus",
-          "diagramUrl": "https://tfthandbook.com/wp-content/uploads/2024/07/pyro-varus-1024x467.png",
-          "description": {
-            "sections": [
-              "When to Play:\n\nPyro + 1",
-              "How to Play:\n\nFast 8, roll for 5 pyro (if pyro spat) + arcana + rumble\n\nBoard above is ideal board.\n\nCan play any shape before Briar and Pyro spat on Hecarim. Can also play Pyro Camille.\n\n ",
-              "Items:\n\nVarus: Shojin IE + 1\n\nNasus/Tahm/Shen: Tank items\n\n "
-            ]
-          },
-          "headerImageUrl": "https://tfthandbook.com/wp-content/uploads/2024/07/Varus_9-e1721798976309.jpg"
+    "flowChart": [
+      {
+        "augment": "Frost Crown/Crest/Winter is Coming",
+        "whatToPlay": "7 Frost"
+      },
+      {
+        "augment": "Warrior Crest/Crown",
+        "whatToPlay": "6 Warrrior"
+      },
+      {
+        "augment": "Blaster Crown",
+        "whatToPlay": "Blaster Reroll"
+      },
+      {
+        "augment": "Portal Crest/Crown",
+        "whatToPlay": "8 Portal Ryze"
+      },
+      {
+        "augment": "Witchcraft Crest",
+        "whatToPlay": "6 Witchcraft Karma"
+      },
+      {
+        "augment": "Hunting Frenzy",
+        "whatToPlay": "Jinx/Kog Reroll"
+      },
+      {
+        "augment": "Molten  Caramel",
+        "whatToPlay": "Molten Caramel Rumble"
+      },
+      {
+        "augment": "Sugarcraft Crown",
+        "whatToPlay": "6 Sugar"
+      },
+      {
+        "augment": "Pyro Crest/Crown",
+        "whatToPlay": "Pyro Varus"
+      },
+      {
+        "augment": "Zap Attack",
+        "whatToPlay": "Zap ATtack Blitzcrank"
+      },
+      {
+        "augment": "Aggressive Preservation",
+        "whatToPlay": "Karma Flex"
+      },
+      {
+        "augment": "Chrono Crest/Crown",
+        "whatToPlay": "Chrono Karma"
+      },
+      {
+        "augment": "Arcana Crest",
+        "whatToPlay": "Arcana Varus"
+      },
+      {
+        "augment": "Eldritch Crest",
+        "whatToPlay": "7 Eldritch"
+      },
+      {
+        "augment": "Faerie Crest/Crown/Royal Guard",
+        "whatToPlay": "Faerie Kalista"
+      }
+    ]
+  },
+  "earlyGameLeveling": {
+    "sections": [
+      {
+        "stage": "Stage 1-4",
+        "content": {
+          "sections": [
+            "**Should you pre-level or no?**\n\nWhat is “pre-leveling”? Pre-leveling is the strategy of buying XP so that you’ll hit the next level at the start of the next turn.\n\nSo at Stage 1-4, you are at level 3 0/6 exp. If you push 4 into exp, you will be at level 3 4/6 exp. You gain 2 exp per round, so the next round (at Stage 2-1), it will automatically level you up to level 4, giving you LEVEL 4 SHOP ODDS instead of LEVEL 3.\n\nLevel 4 shop odds open you up to 3 cost units and a higher chance at 2 cost units, with a lower chance at 1 cost units.\n\nKeeping this in mind, you can decide whether or not you want to PRE-LEVEL or not.\n\nPRE-LEVEL IF:\n\n* You have upgraded 1 cost units\n* You have clear direction on what early game you’re playing\n* If you want higher odds at hitting 2/3 cost units\n\nOTHERWISE, don’t PRE-LEVEL\n\nPRE-LEVELING IS WRONG IN ABOUT 90% OF YOUR GAMES!\n\nPRE-LEVELING when you shouldn’t usually leads to weak board strength and poor econ."
+          ]
         }
-      ]
-    },
-    {
-      "label": "Reroll",
-      "comps": [
-        {
-          "name": "Ashe Reroll",
-          "diagramUrl": "https://tfthandbook.com/wp-content/uploads/2024/07/ashe-reroll-1024x462.png",
-          "description": {
-            "sections": [
-              "When to Play:\n\nLots of Ashe/Jax, lots of bows / pandoras",
-              "How to Play:\n\nSlowroll level 5 for Ashe 3 > Jax 3\n\nPush levels for 7 multi\n\nCan play arcana before Camille",
-              "Items:\n\nAshe: Guinsoo + Runaans + LW/Redbuff\n\nJax: Tank items\n\nLeftover AD items on Hec/Kalista"
-            ]
-          },
-          "headerImageUrl": "https://tfthandbook.com/wp-content/uploads/2024/07/Ashe_32-e1726126177841.jpg"
-        },
-        {
-          "name": "Bastion Ahri",
-          "diagramUrl": "https://tfthandbook.com/wp-content/uploads/2024/08/bastion-ahri-1-1024x462.png",
-          "description": {
-            "sections": [
-              "When to Play:\n\nLots of Zoe, Poppy, Lilia copies, reroll augment preferred",
-              "How to Play:\n\nLevel 5 slowroll for Lilia 3 > Zoe 3 > Poppy 3\n\nGo level 6/7 and slowroll for Ahri 3\n\nPush levels for 4 bastion 4 scholar + arcana",
-              "Items:\n\nAhri: BB NASHOR JG/RABADON\n\nLillia: Tank"
-            ]
-          },
-          "headerImageUrl": "https://tfthandbook.com/wp-content/uploads/2024/08/Ahri_66-e1723653649101.jpg"
-        },
-        {
-          "name": "Blaster Reroll",
-          "diagramUrl": "https://tfthandbook.com/wp-content/uploads/2024/09/blaster-reroll-1024x459.png",
-          "description": {
-            "sections": [
-              "When to Play:\n\nLots of Ezreal/Hwei , reroll augment",
-              "How to Play:\n\nGo level 7, play 4 blaster 4 vanguard.\n\nReroll Ezreal 3 > Hwei 3 > Morde 3",
-              "Items:\n\nEzreal: IE LW + 1 (Redbuff, Shojin, Hoj, BT, DB, GS)\n\nHwei: Mana + AP\n\nMorde: Tank"
-            ]
-          },
-          "headerImageUrl": "https://tfthandbook.com/wp-content/uploads/2024/09/Ezreal_3-e1726126792613.jpg"
-        },
-        {
-          "name": "Hecarim Reroll",
-          "diagramUrl": "https://tfthandbook.com/wp-content/uploads/2024/09/hecarim-reroll-2-1024x466.png",
-          "description": {
-            "sections": [
-              "When to Play:\n\nHecarim + Melee items, good with Unleash The Beast augment",
-              "How to Play:\n\nGo level 7 play above board, roll for Hec 3 > Kat 3, push levels for Xerath/ 5 multi / 4 bastion",
-              "Items:\n\nHecarim: BT QSS + 1\n\nKatarina: AP / CRIT\n\nKalista: LW"
-            ]
-          },
-          "headerImageUrl": "https://tfthandbook.com/wp-content/uploads/2024/09/hecarim-e1725652705595.jpg"
-        },
-        {
-          "name": "Jinx Reroll",
-          "diagramUrl": "https://tfthandbook.com/wp-content/uploads/2024/07/jinx-reroll-1-1024x452.png",
-          "description": {
-            "sections": [
-              "When to Play:\n\nGuinsoo Opener + Gargoyle Wukong",
-              "How to Play:\n\nGo level 7, roll 4 hunter + Wukong + Bard + Zilean\n\n3 star Jinx > Wukong > push levels\n\nLevel for more preservers",
-              "Items:\n\nJinx: Guinsoo LW Runaans\n\nWukong: Gargoyle Gargoyle Redemption\n\nOlaf: BT Steraks"
-            ]
-          },
-          "headerImageUrl": "https://tfthandbook.com/wp-content/uploads/2024/07/Jinx_51-e1721801311943.jpg"
-        },
-        {
-          "name": "Kogmaw Reroll",
-          "diagramUrl": "https://tfthandbook.com/wp-content/uploads/2024/07/kogmaw-reroll-1-1024x462.png",
-          "description": {
-            "sections": [
-              "When to Play:\n\nLots of kogs, reroll augment",
-              "How to Play:\n\nGo level 6, roll for above board minus olaf\n\nHit Kogmaw 3 > Nunu3 > Rumble 3 > push levels for 4 hunter\n\nCan roll for Jinx 3, or push levels for Bastion",
-              "Items:\n\nKog: Shojin Redbuff LW\n\nJinx: Guinsoo + Runaans\n\nRumble/Nunu: Tank"
-            ]
-          },
-          "headerImageUrl": "https://tfthandbook.com/wp-content/uploads/2024/07/KogMaw_28-e1722241317175.jpg"
-        },
-        {
-          "name": "Soraka Seraphine Reroll",
-          "diagramUrl": "https://tfthandbook.com/wp-content/uploads/2024/10/soraka-sera-reroll-1024x455.png",
-          "description": {
-            "sections": [
-              "When to Play:\n\nLots of Soraka / Seraphines",
-              "How to Play:\n\nLevel 5 slowroll for Soraka 3 > Seraphine 3\n\nPush levels for vertical mage",
-              "Items:\n\nSoraka: Shojin + AP\n\nSeraphine: Shojin + AP\n\nVex: Tank"
-            ]
-          },
-          "headerImageUrl": "https://tfthandbook.com/wp-content/uploads/2024/10/soraka-e1728534257561.jpg"
-        },
-        {
-          "name": "Veigar Reroll",
-          "diagramUrl": "https://tfthandbook.com/wp-content/uploads/2024/07/veigar-reroll-1-1024x458.png",
-          "description": {
-            "sections": [
-              "When to Play:\n\nEarly Veigar/Vex + tear/rod",
-              "How to Play:\n\nGo level 7, play 5 mage + Morde + Zilean. Can also play Nunu+Blitz for 3 honey\n\nRoll for Veigar 3 > Vex 3 , push levels for Yuumi",
-              "Items:\n\nVeigar: BB Nashor Shojin or AP\n\nVex: Spark + Tank"
-            ]
-          },
-          "headerImageUrl": "https://tfthandbook.com/wp-content/uploads/2024/07/Veigar_51-e1722411778939.jpg"
-        },
-        {
-          "name": "Warwick Reroll",
-          "diagramUrl": "https://tfthandbook.com/wp-content/uploads/2024/09/warwick-reroll-1024x459.png",
-          "description": {
-            "sections": [
-              "When to Play:\n\nVampiric Scepter Ornn item",
-              "How to Play:\n\nLevel 5 roll for Warwick 3 > Blitz 3 > Twitch 3\n\nPush levels for 6 vanguard",
-              "Items:\n\nWarwick: Vamp Scepter + Guinsoo + Titans/QSS\n\nBlitz: Tank\n\nTwitch: LW"
-            ]
-          },
-          "headerImageUrl": "https://tfthandbook.com/wp-content/uploads/2024/09/Warwick_4-e1726127353941.jpg"
-        },
-        {
-          "name": "Ziggs Reroll",
-          "diagramUrl": "https://tfthandbook.com/wp-content/uploads/2024/09/ziggs-reroll-1-1024x463.png",
-          "description": {
-            "sections": [
-              "When to Play:\n\nLots of Ziggs/Blitz",
-              "How to Play:\n\nLevel 5, roll for Ziggs 3 > Blitz 3, push levels for Arcana\n\nCan roll for Veigar 3 on 7 if uncontested",
-              "Items:\n\nZiggs: BB JG + 1\n\nVeigar: Leftover AP items\n\nBlitz: Tank"
-            ]
-          },
-          "headerImageUrl": "https://tfthandbook.com/wp-content/uploads/2024/09/Ziggs_24-e1726126406480.jpg"
+      },
+      {
+        "stage": "Stage 2-1",
+        "content": {
+          "sections": [
+            "Level to 4 or stay level 3?\n\nLevel to 4 if you think you can win streak. Otherwise, stay level 3 and go for lose streak / carousel priority.\n\nHOW TO KNOW IF YOU CAN WINSTREAK OR NOT: If you have a strong slammable item and/or you have multiple upgraded units, you are probably strong and can go for win streak.\n\nExamples:\n\nKennen 2 Taric 2 Corki 2\\. STRONG.\n\nAnnie 2 TahmKench 2 Olaf 2\\. STRONG.\n\nNami 1 Taric 1 Gragas 1\\. NOT STRONG. No upgraded units."
+          ]
         }
-      ]
-    },
-    {
-      "label": "Hero",
-      "comps": [
-        {
-          "name": "Dejavu Galio",
-          "diagramUrl": "https://tfthandbook.com/wp-content/uploads/2024/07/dejavu-galio-1024x453.png",
-          "description": {
-            "sections": [
-              "When to Play:\n\nDejavu hero augment",
-              "How to Play:\n\nGo level 6, roll for Galio 3, push levels for 4 vanguard + x",
-              "Items:\n\nGalio: Guinsoo x 2 + Gunblade\n\nMorde/Rumble: Tank items"
-            ]
-          },
-          "headerImageUrl": "https://tfthandbook.com/wp-content/uploads/2024/07/Galio_1-e1721892934705.jpg"
-        },
-        {
-          "name": "Molten Caramel Rumble",
-          "diagramUrl": "https://tfthandbook.com/wp-content/uploads/2024/08/molten-caramel-rumble-1024x450.png",
-          "description": {
-            "sections": [
-              "When to Play:\n\nMolten Caramel Rumble Hero augment",
-              "How to Play:\n\nGo level 6, play 4 vanguard + trist + bard\n\nSlowroll for Rumble 3 > Trist 3 > Galio 3\n\nPush levels for preservers",
-              "Items:\n\nRumble: BT + AP\n\nTrist: AD\n\nGalio: Tank"
-            ]
-          },
-          "headerImageUrl": "https://tfthandbook.com/wp-content/uploads/2024/08/rumble-e1723652691774.jpg"
-        },
-        {
-          "name": "Sweet Tooth Nunu",
-          "diagramUrl": "https://tfthandbook.com/wp-content/uploads/2024/07/sweet-tooth-nunu-2-1024x471.png",
-          "description": {
-            "sections": [
-              "When to Play:\n\nSweet Tooth hero augment",
-              "How to Play:\n\nLevel 6 play 5 Honey + Bastion\n\nRoll for Nunu 3 > Kog 3 > level up and can roll for Veigar 3.\n\nPush levels for more bastions",
-              "Items:\n\nNunu: Warmogs BT AA/Crownguard\n\nVeigar: AP items\n\nKog: AD items"
-            ]
-          },
-          "headerImageUrl": "https://tfthandbook.com/wp-content/uploads/2024/07/Nunu_26-e1721809423599.jpg"
-        },
-        {
-          "name": "Witchy Wallop Poppy",
-          "diagramUrl": "https://tfthandbook.com/wp-content/uploads/2024/08/witch-wallop-poppy-1024x450.png",
-          "description": {
-            "sections": [
-              "When to Play:\n\nWitchy Wallop Hero Augment",
-              "How to Play:\n\nLevel 5, slowroll for Poppy 3 > Zoe 3 > Lilia 3\n\nPush levels for 4 Bastion + 4 Scholar + Arcana",
-              "Items:\n\nPoppy: BT Steraks IE\n\nZoe: AP items\n\nLilia: Tank items"
-            ]
-          },
-          "headerImageUrl": "https://tfthandbook.com/wp-content/uploads/2024/08/poppy-e1723653018968.jpg"
-        },
-        {
-          "name": "Zap Attack Blitzcrank",
-          "diagramUrl": "https://tfthandbook.com/wp-content/uploads/2024/07/ziggs-reroll-1024x463.png",
-          "description": {
-            "sections": [
-              "When to Play:\n\nZap Attack Hero Augment",
-              "How to Play:\n\nRoll for Blitz 3 > Ziggs 3, push levels for 5 honey + 3 mage\n\nCan roll for Veigar 3 if uncontested",
-              "Items:\n\nBlitz: Warmog Spark + 1 (Crownguard, Gargoyle)\n\nVeigar: AP items\n\n "
-            ]
-          },
-          "headerImageUrl": "https://tfthandbook.com/wp-content/uploads/2024/07/Blitzcrank_56-e1721892474261.jpg"
+      },
+      {
+        "stage": "Stage 2-2",
+        "content": {
+          "sections": [
+            "If you leveled at 2-1 and are currently level 4:\n\nIn most games you would stay level 4\\. However, if you started with a 12+ gold opener AND won the first round, you can put in 8 EXP to level to 5 IF you have a good 5th unit to play and are contesting win streak with someone else that is pretty strong.\n\nIf you lost the first round, DO NOT level.\n\nIf you are level 3:\n\nIf you won the first round when you were trying to lose, you should level to 4 to try to win streak. HOWEVER, if you are absolutely positive you cannot beat anyone even if you level, DO NOT LEVEL, stay level 3.\n\nIf you lost but upgraded a few units from the current shop and think you can start winning / 4th unit spikes your board pretty hard, you can level to 4 here.\n\nOtherwise, just stay level 3 and lose again."
+          ]
         }
-      ]
-    }
-  ]
+      },
+      {
+        "stage": "Stage 2-3",
+        "content": {
+          "sections": [
+            "By now, EVERYONE should be level 4 here.\n\nIf you are on a 2 win streak AND have a good 5th unit to play, and you are contesting win streak with multiple players, level to 5 here.\n\nYOU SHOULD BE SCOUTING FOR STRONG OPPONENTS IN THE LOBBY TO POSITION FOR. Usually, these are the opponents with 100 / high HP in the lobby.\n\nOn this turn, you should generally pre-level or make 10 gold.\n\nIf you can’t make 10 gold without selling valuable units, pre-level to 5 here to get level 5 shop odds (Push in exp until level 4 8/10 exp).\n\nOtherwise, make 10 gold.\n\nHowever, if you are contesting lose streak and you think having an extra unit for the next two rounds would cause you to beat someone else contesting lose streak, DO NOT PRE-LEVEL.\n\nYOU SHOULD BE THINKING ABOUT WHAT CAROUSEL ITEM TO GET HERE. FIRST, SECOND, THIRD, FOURTH, AND FIFTH BEST CHOICES."
+          ]
+        }
+      },
+      {
+        "stage": "Stage 2-5",
+        "content": {
+          "sections": [
+            "If you are level 5, there’s nothing to do here. If you’re win streaking, make sure to scout for tough opponents you haven’t fought yet and position for them.\n\nIf you are still level 4 and think you can win the next 2 rounds, you can level to 5 here and go for a 2 win streak into neutrals.\n\nHOW TO KNOW IF YOU CAN WINSTREAK NEXT TWO ROUNDS:\n\nIf you completed a strong item from carousel (e.g. Sunfire Cape if you have upgraded frontline units) AND upgraded a few units / got a strong carry, you can probably try to win the next two rounds.\n\nKEEPING TRACK OF OPPONENTS YOU FOUGHT IS VERY USEFUL HERE. If you’ve already fought the 3 strongest people in the lobby, you can scout the remaining players left in your pool and make a judgement call as to whether you can win the next two or not.\n\nIf you are still level 4 and don’t think you can win the next 2 rounds, you stay level 4 here and keep losing."
+          ]
+        }
+      },
+      {
+        "stage": "Stage 2-6",
+        "content": {
+          "sections": [
+            "IF YOU ARE ON A 3 OR 4 LOSS STREAK:\n\nMake sure to scout and make your board weaker than the weakest player in the lobby you haven’t fought yet. You do NOT want to win and want to lose streak into neutrals for maximum econ.\n\nIF YOU ARE ON A 4 WIN STREAK:\n\nOn rare occasions, if you are rich (12+ gold opener / have an econ augment like hustler), you can level to 6 if you have a good 6th unit to play AND are contesting win streak with someone else.\n\nMAKE SURE TO SCOUT TOUGHEST OPPONENT YOU HAVENT FOUGHT YET AND POSITION FOR THEM!!!\n\nOTHERWISE, do nothing."
+          ]
+        }
+      }
+    ]
+  }
 }

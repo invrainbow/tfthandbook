@@ -1,11 +1,17 @@
-This is a revamp of [TFT Handbook](https://tfthandbook.com/) to make it easier
-to navigate while in game and also generally nicer looking.
+# TFT Handbook
 
-[https://tfthandbook.vercel.app](https://tfthandbook.vercel.app)
+This is a revamp of [RobinSongz' TFT Handbook](https://tfthandbook.com/) to make
+it easier to navigate while in game and also generally nicer looking.
 
-- [`data/scrape.ts`](data/scrape.ts) scrapes the data from the original website
-  and dumps it into structured JSON
+[**tfthandbook.vercel.app**](https://tfthandbook.vercel.app)
+
+## Tech stack
+
+- [`data/scrape.ts`](data/scrape.ts) scrapes the original website into
+  structured JSON
 - Straightforward Next.js app to display the data
+
+## Screenshots
 
 ![](screenshots/screenshot1.png)
 

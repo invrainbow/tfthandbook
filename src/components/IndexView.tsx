@@ -2,6 +2,8 @@ import {
   BoxesIcon,
   ChevronsUpIcon,
   CrownIcon,
+  GalleryHorizontalEndIcon,
+  RectangleVerticalIcon,
   SquareArrowOutUpRightIcon,
 } from "lucide-react";
 import { useState } from "react";
@@ -15,20 +17,23 @@ type Tab = "comps" | "meta" | "early_game_leveling";
 const MIDDLE_TABS = [
   {
     tab: "comps",
-    label: "Comps List",
-    labelShort: "Comps",
+    label: "Comps",
     icon: <BoxesIcon className="w-6 h-6" strokeWidth="1" absoluteStrokeWidth />,
   },
   {
     tab: "meta",
-    label: "Meta Strategy",
-    labelShort: "Meta",
-    icon: <CrownIcon className="w-5 h-5" strokeWidth="2" absoluteStrokeWidth />,
+    label: "Augments",
+    icon: (
+      <GalleryHorizontalEndIcon
+        className="w-5 h-5"
+        strokeWidth="2"
+        absoluteStrokeWidth
+      />
+    ),
   },
   {
     tab: "early_game_leveling",
-    label: "Early Game Leveling",
-    labelShort: "Leveling",
+    label: "Leveling",
     icon: (
       <ChevronsUpIcon className="w-6 h-6" strokeWidth="3" absoluteStrokeWidth />
     ),
@@ -61,15 +66,15 @@ export function IndexView() {
           <span>RobinSongz TFT Handbook</span>
         </div>
         <div className="flex-1 flex gap-6 md:gap-8 items-center justify-center">
-          {MIDDLE_TABS.map(({ tab, label, labelShort, icon }) => (
+          {MIDDLE_TABS.map(({ tab, label, icon }) => (
             <HeaderLink
               as="button"
+              active={currentTab === tab}
               key={tab}
               onClick={() => setCurrentTab(tab as Tab)}
             >
               {icon}
-              <span className="hidden md:inline-block">{label}</span>
-              <span className="md:hidden">{labelShort}</span>
+              <span>{label}</span>
             </HeaderLink>
           ))}
         </div>

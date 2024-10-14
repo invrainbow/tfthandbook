@@ -1,24 +1,38 @@
+import Link from "next/link";
+import { PropsWithChildren } from "react";
 import { twMerge } from "tailwind-merge";
 
-type AnchorProps = {
-  as?: undefined;
-} & React.AnchorHTMLAttributes<HTMLAnchorElement>;
+type Props = PropsWithChildren<{
+  href: string;
+  className?: string;
+  active?: boolean;
+  external?: boolean;
+}>;
 
-type ButtonProps = {
-  as: "button";
-} & React.ButtonHTMLAttributes<HTMLButtonElement>;
-
-type Props = { active?: boolean } & (AnchorProps | ButtonProps);
-
-export function HeaderLink({ active, ...props }: Props) {
+export function HeaderLink({
+  href,
+  external,
+  className,
+  active,
+  children,
+}: Props) {
   const newClassName = twMerge(
     "cursor-pointer uppercase font-semibold text-sm flex items-center gap-1.5",
-    props.className,
+    className,
     active ? "text-white" : "text-slate-400 hover:text-slate-300"
   );
 
-  if (props.as === "button") {
-    return <button className={newClassName} {...props} />;
+  if (external) {
+    return (
+      <a target="_blank" href={href} className={newClassName}>
+        {children}
+      </a>
+    );
   }
-  return <a className={newClassName} {...props} />;
+
+  return (
+    <Link href={href} className={newClassName}>
+      {children}
+    </Link>
+  );
 }

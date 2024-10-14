@@ -1,5 +1,14 @@
-import { IndexView } from "@/components/IndexView";
+import { GetServerSideProps } from "next";
 
-export default function Home() {
-  return <IndexView />;
+export const getServerSideProps: GetServerSideProps = async () => {
+  return {
+    redirect: {
+      destination: "/comps",
+      permanent: false,
+    },
+  };
+};
+
+export default function Index() {
+  return null;
 }

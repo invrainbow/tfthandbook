@@ -3,7 +3,7 @@ import { leveling } from "@/handbook";
 import Markdown from "react-markdown";
 import { twMerge } from "tailwind-merge";
 
-export function LevelingView() {
+export default function Leveling() {
   return (
     <div className="h-full w-full overflow-auto min-h-0">
       <div className="flex flex-col">

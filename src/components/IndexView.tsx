@@ -1,46 +1,48 @@
-import { handbookData } from "@/handbook";
-import { BoxesIcon, ChevronsUpIcon, CrownIcon, LucideIcon } from "lucide-react";
+import {
+  BoxesIcon,
+  ChevronsUpIcon,
+  CrownIcon,
+  SquareArrowOutUpRightIcon,
+} from "lucide-react";
 import { useState } from "react";
-import { twMerge } from "tailwind-merge";
 import { CompsListView } from "./CompsListView";
 import { EarlyGameLevelingView } from "./EarlyGameLevelingView";
+import { HeaderLink } from "./HeaderLink";
 import { MetaStrategyView } from "./MetaStrategyView";
 
 type Tab = "comps" | "meta" | "early_game_leveling";
 
-type TabInfo = {
-  tab: Tab;
-  label: string;
-  labelShort: string;
-  icon: LucideIcon;
-  iconClassName: string;
-  stroke?: string;
-};
-
-const TAB_INFO: TabInfo[] = [
+const MIDDLE_TABS = [
   {
     tab: "comps",
     label: "Comps List",
     labelShort: "Comps",
-    icon: BoxesIcon,
-    iconClassName: "w-6 h-6",
-    stroke: "1",
+    icon: <BoxesIcon className="w-6 h-6" strokeWidth="1" absoluteStrokeWidth />,
   },
   {
     tab: "meta",
     label: "Meta Strategy",
     labelShort: "Meta",
-    icon: CrownIcon,
-    iconClassName: "w-5 h-5",
-    stroke: "2",
+    icon: <CrownIcon className="w-5 h-5" strokeWidth="2" absoluteStrokeWidth />,
   },
   {
     tab: "early_game_leveling",
     label: "Early Game Leveling",
-    labelShort: "Early Game",
-    icon: ChevronsUpIcon,
-    iconClassName: "w-6 h-6",
-    stroke: "3",
+    labelShort: "Leveling",
+    icon: (
+      <ChevronsUpIcon className="w-6 h-6" strokeWidth="3" absoluteStrokeWidth />
+    ),
+  },
+];
+
+const RIGHT_TABS = [
+  {
+    url: "https://github.com/invrainbow/tfthandbook",
+    label: "Source",
+  },
+  {
+    url: "https://tfthandbook.com",
+    label: "Original",
   },
 ];
 
@@ -49,27 +51,36 @@ export function IndexView() {
 
   return (
     <div className="h-screen w-full flex flex-col">
-      <div className="border-b p-4 flex justify-center gap-8">
-        {TAB_INFO.map(
-          ({ tab, label, labelShort, icon: Icon, iconClassName, stroke }) => (
-            <button
+      <div className="border-b py-4 px-5 grid grid-cols-1 gap-3 md:grid-cols-[400px_auto_400px] justify-between items-center">
+        <div className="text-white text-base font-semibold flex justify-center md:justify-start items-center gap-2 md:gap-2.5 select-none pointer-events-none">
+          <img
+            className="block w-6 h-6 md:w-8 md:h-8 border border-red-700/80"
+            src="/reforger.webp"
+            alt=""
+          />
+          <span>RobinSongz TFT Handbook</span>
+        </div>
+        <div className="flex-1 flex gap-6 md:gap-8 items-center justify-center">
+          {MIDDLE_TABS.map(({ tab, label, labelShort, icon }) => (
+            <HeaderLink
+              as="button"
               key={tab}
-              onClick={() => setCurrentTab(tab)}
-              className={twMerge(
-                "cursor-pointer uppercase font-semibold text-sm flex items-center gap-1.5",
-                tab === currentTab ? "text-white" : "text-slate-400"
-              )}
+              onClick={() => setCurrentTab(tab as Tab)}
             >
-              <Icon
-                className={twMerge(iconClassName, "")}
-                strokeWidth={stroke}
-                absoluteStrokeWidth
-              />
+              {icon}
               <span className="hidden md:inline-block">{label}</span>
               <span className="md:hidden">{labelShort}</span>
-            </button>
-          )
-        )}
+            </HeaderLink>
+          ))}
+        </div>
+        <div className="hidden md:flex gap-4 items-center justify-end">
+          {RIGHT_TABS.map((it) => (
+            <HeaderLink target="_blank" key={it.url} href={it.url}>
+              {it.label}
+              <SquareArrowOutUpRightIcon className="w-4 h-4 relative -top-px opacity-70" />
+            </HeaderLink>
+          ))}
+        </div>
       </div>
       <div className="flex-1 min-h-0">
         {currentTab === "comps" && <CompsListView />}

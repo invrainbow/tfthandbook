@@ -74,8 +74,9 @@ export function CompsView() {
                           </div>
                         ) : (
                           <div className="flex flex-col gap-4">
-                            {it.description.sections.map((section) => (
+                            {it.description.sections.map((section, i) => (
                               <div
+                                key={i}
                                 className={twMerge(
                                   "[&_p:not(:last-child)]:mb-1.5 [&_p:not(:first-child)]:ml-3",
                                   "[&_p:first-child]:font-semibold [&_p:first-child]:text-white/90",

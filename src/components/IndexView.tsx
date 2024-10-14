@@ -1,18 +1,16 @@
 import {
   BoxesIcon,
   ChevronsUpIcon,
-  CrownIcon,
   GalleryHorizontalEndIcon,
-  RectangleVerticalIcon,
   SquareArrowOutUpRightIcon,
 } from "lucide-react";
 import { useState } from "react";
-import { CompsListView } from "./CompsListView";
-import { EarlyGameLevelingView } from "./EarlyGameLevelingView";
+import { AugmentsView } from "./AugmentsView";
+import { CompsView } from "./CompsView";
 import { HeaderLink } from "./HeaderLink";
-import { MetaStrategyView } from "./MetaStrategyView";
+import { LevelingView } from "./LevelingView";
 
-type Tab = "comps" | "meta" | "early_game_leveling";
+type Tab = "comps" | "augments" | "leveling";
 
 const MIDDLE_TABS = [
   {
@@ -21,18 +19,12 @@ const MIDDLE_TABS = [
     icon: <BoxesIcon className="w-6 h-6" strokeWidth="1" absoluteStrokeWidth />,
   },
   {
-    tab: "meta",
+    tab: "augments",
     label: "Augments",
-    icon: (
-      <GalleryHorizontalEndIcon
-        className="w-5 h-5"
-        strokeWidth="2"
-        absoluteStrokeWidth
-      />
-    ),
+    icon: <GalleryHorizontalEndIcon className="w-5 h-5" />,
   },
   {
-    tab: "early_game_leveling",
+    tab: "leveling",
     label: "Leveling",
     icon: (
       <ChevronsUpIcon className="w-6 h-6" strokeWidth="3" absoluteStrokeWidth />
@@ -88,9 +80,9 @@ export function IndexView() {
         </div>
       </div>
       <div className="flex-1 min-h-0">
-        {currentTab === "comps" && <CompsListView />}
-        {currentTab === "meta" && <MetaStrategyView />}
-        {currentTab === "early_game_leveling" && <EarlyGameLevelingView />}
+        {currentTab === "comps" && <CompsView />}
+        {currentTab === "augments" && <AugmentsView />}
+        {currentTab === "leveling" && <LevelingView />}
       </div>
     </div>
   );

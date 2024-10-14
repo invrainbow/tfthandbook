@@ -3,7 +3,7 @@ import { twMerge } from "tailwind-merge";
 
 type Props = HTMLProps<HTMLDivElement>;
 
-export function StripedBackgroundTitle({ className, ...rest }: Props) {
+export function FancyTitle({ className, ...rest }: Props) {
   return (
     <div
       className={twMerge(

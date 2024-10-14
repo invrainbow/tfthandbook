@@ -1,5 +1,4 @@
-import _handbookData from "@/data.json";
-import { HandbookData } from "../data/types";
+import _handbook from "@/data.json";
+import { Handbook } from "../data/types";
 
-export const { compsList, earlyGameLeveling, metaStrategy } =
-  _handbookData as HandbookData;
+export const { comps, leveling, augments } = _handbook as Handbook;

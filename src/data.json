@@ -1,5 +1,5 @@
 {
-  "compsList": {
+  "comps": {
     "groups": [
       {
         "label": "Standard",
@@ -372,7 +372,7 @@
       }
     ]
   },
-  "metaStrategy": {
+  "augments": {
     "strongAugments": {
       "silverAugments": [
         "Missed Connections",
@@ -486,7 +486,7 @@
       }
     ]
   },
-  "earlyGameLeveling": {
+  "leveling": {
     "sections": [
       {
         "stage": "Stage 1-4",

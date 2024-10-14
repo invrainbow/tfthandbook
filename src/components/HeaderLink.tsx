@@ -10,11 +10,11 @@ type ButtonProps = {
 
 type Props = { active?: boolean } & (AnchorProps | ButtonProps);
 
-export function HeaderLink(props: Props) {
+export function HeaderLink({ active, ...props }: Props) {
   const newClassName = twMerge(
     "cursor-pointer uppercase font-semibold text-sm flex items-center gap-1.5",
     props.className,
-    props.active ? "text-white" : "text-slate-400 hover:text-slate-300"
+    active ? "text-white" : "text-slate-400 hover:text-slate-300"
   );
 
   if (props.as === "button") {

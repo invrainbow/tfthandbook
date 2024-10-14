@@ -16,7 +16,7 @@ export type CompGroup = {
   comps: Comp[];
 };
 
-export type CompsList = {
+export type Comps = {
   groups: CompGroup[];
 };
 
@@ -31,22 +31,22 @@ export type FlowChartItem = {
   whatToPlay: string;
 };
 
-export type MetaStrategy = {
+export type Augments = {
   strongAugments: StrongAugments;
   flowChart: FlowChartItem[];
 };
 
-export type EarlyGameLevelingSection = {
+export type LevelingSection = {
   stage: string;
   content: TextBlurb;
 };
 
-export type EarlyGameLeveling = {
-  sections: EarlyGameLevelingSection[];
+export type Leveling = {
+  sections: LevelingSection[];
 };
 
-export type HandbookData = {
-  compsList: CompsList;
-  metaStrategy: MetaStrategy;
-  earlyGameLeveling: EarlyGameLeveling;
+export type Handbook = {
+  comps: Comps;
+  augments: Augments;
+  leveling: Leveling;
 };

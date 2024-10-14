@@ -1,13 +1,13 @@
 import { promises as fs } from "fs";
 import { JSDOM } from "jsdom";
 import {
-  CompsList,
+  Comps,
   Comp,
   CompGroup,
   TextBlurb,
-  HandbookData,
-  EarlyGameLeveling,
-  MetaStrategy,
+  Handbook,
+  Leveling,
+  Augments,
   StrongAugments,
   FlowChartItem,
 } from "./types";
@@ -73,7 +73,7 @@ function parseComp(node: Element, headerLookup: Record<string, string>): Comp {
   return { name, diagramUrl, description, headerImageUrl };
 }
 
-function parseCompsList(node: Element): CompsList {
+function parseCompsList(node: Element): Comps {
   const styleNodes = findAll(node, "style");
   const headerLookup: Record<string, string> = {};
 
@@ -116,7 +116,7 @@ function parseCompsList(node: Element): CompsList {
   return { groups };
 }
 
-function parseEarlyGameLeveling(node: Element): EarlyGameLeveling {
+function parseLeveling(node: Element): Leveling {
   const titleNodes = findAll(node, "h2.elementor-heading-title");
   const titleNode =
     Array.from(titleNodes).find(
@@ -143,7 +143,7 @@ function parseEarlyGameLeveling(node: Element): EarlyGameLeveling {
   return { sections };
 }
 
-function parseMetaStrategy(node: Element): MetaStrategy {
+function parseAugments(node: Element): Augments {
   const strategyNodes = Array.from(findAll(node, ".meta-strategy"));
   assert(strategyNodes.length === 2, `expected 2 strategy nodes`);
 
@@ -218,21 +218,16 @@ async function main() {
     find(tabsContentNode, `#e-n-tab-content-${tabIdLookup[tabName]}`);
 
   const compsListContentNode = getTabContentNodeById("comps list");
-  const compsList = parseCompsList(compsListContentNode);
+  const comps = parseCompsList(compsListContentNode);
 
   const metaStrategyContentNode = getTabContentNodeById("meta strategy");
-  const metaStrategy = parseMetaStrategy(metaStrategyContentNode);
+  const augments = parseAugments(metaStrategyContentNode);
 
   const guidesContentNode = getTabContentNodeById("guides");
-  const earlyGameLeveling = parseEarlyGameLeveling(guidesContentNode);
+  const leveling = parseLeveling(guidesContentNode);
 
-  const handbookData: HandbookData = {
-    compsList,
-    metaStrategy,
-    earlyGameLeveling,
-  };
-
-  await fs.writeFile("src/data.json", JSON.stringify(handbookData, null, 2));
+  const handbook: Handbook = { comps, augments, leveling };
+  await fs.writeFile("src/data.json", JSON.stringify(handbook, null, 2));
 }
 
 main();

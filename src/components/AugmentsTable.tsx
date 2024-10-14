@@ -8,10 +8,9 @@ export type Column = {
 
 type Props = {
   columns: Column[];
-  noRowStyling?: boolean;
 };
 
-export function MetaStrategyTable({ columns, noRowStyling = false }: Props) {
+export function AugmentsTable({ columns }: Props) {
   return (
     <div
       className={twMerge(

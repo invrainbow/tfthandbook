@@ -1,14 +1,14 @@
-import { StripedBackgroundTitle } from "@/components/StripedBackgroundTitle";
+import { FancyTitle } from "@/components/FancyTitle";
 import Markdown from "react-markdown";
 import { twMerge } from "tailwind-merge";
 import { Comp } from "../../data/types";
-import { compsList } from "@/handbook";
+import { comps } from "@/handbook";
 
 function makeUniqueCompId(comp: Comp) {
   return "comp-" + comp.name.toLowerCase().replace(" ", "-");
 }
 
-export function CompsListView() {
+export function CompsView() {
   const onScroll = (comp: Comp) => {
     const el = document.getElementById(makeUniqueCompId(comp));
     if (el) {
@@ -23,7 +23,7 @@ export function CompsListView() {
   return (
     <div className="h-full w-full flex">
       <div className="hidden md:flex w-auto py-6 px-4 flex-col gap-8 max-h-full overflow-auto">
-        {compsList.groups.map(({ label, comps }, i) => (
+        {comps.groups.map(({ label, comps }, i) => (
           <div key={label} className="">
             <div className="text-sm font-medium uppercase text-white/50 mb-2">
               {label} comps
@@ -45,13 +45,11 @@ export function CompsListView() {
       </div>
       <div className="flex-1 border-l max-h-full overflow-auto">
         <div className="flex flex-col">
-          {compsList.groups.map(({ label, comps }, i) => (
+          {comps.groups.map(({ label, comps }, i) => (
             <div key={label} className="flex flex-col">
-              <StripedBackgroundTitle
-                className={i === 0 ? "border-b" : "border-y"}
-              >
+              <FancyTitle className={i === 0 ? "border-b" : "border-y"}>
                 {label} Comps
-              </StripedBackgroundTitle>
+              </FancyTitle>
               <div className="flex flex-col">
                 {comps.map((it) => (
                   <div

@@ -1,17 +1,17 @@
-import { StripedBackgroundTitle } from "@/components/StripedBackgroundTitle";
-import { earlyGameLeveling } from "@/handbook";
+import { FancyTitle } from "@/components/FancyTitle";
+import { leveling } from "@/handbook";
 import Markdown from "react-markdown";
 import { twMerge } from "tailwind-merge";
 
-export function EarlyGameLevelingView() {
+export function LevelingView() {
   return (
     <div className="h-full w-full overflow-auto min-h-0">
       <div className="flex flex-col">
-        {earlyGameLeveling.sections.map((it) => (
+        {leveling.sections.map((it) => (
           <>
-            <StripedBackgroundTitle className="border-y first:border-t-0">
+            <FancyTitle className="border-y first:border-t-0">
               <div className="max-w-screen-sm mx-auto">{it.stage}</div>
-            </StripedBackgroundTitle>
+            </FancyTitle>
             <div className="p-4 md:p-6">
               <div
                 className={twMerge(

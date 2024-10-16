@@ -1,15 +1,27 @@
 # TFT Handbook
 
-This is a revamp of [RobinSongz' TFT Handbook](https://tfthandbook.com/) to make
-it easier to navigate while in game and also generally nicer looking.
+This is a revamp of the [TFT Handbook](https://tfthandbook.com/) by RobinSongz.
+It makes it nicer looking and easier to navigate in game.
 
-[**tfthandbook.vercel.app**](https://tfthandbook.vercel.app)
+Website: [**tfthandbook.vercel.app**](https://tfthandbook.vercel.app)
 
-## Tech stack
+## Setup
 
-- [`data/scrape.ts`](data/scrape.ts) scrapes the original website into
-  structured JSON
-- Straightforward Next.js app to display the data
+```bash
+# install dependencies
+bun install
+
+# run app locally
+bun dev  # spins up at localhost:3000
+
+# run script to fetch latest handbook & store in redis
+bun run cli/fetch-handbook.ts
+```
+
+Since it uses Vercel's storage feature, to actually run it (even locally) you'll
+need to fork the repo, set up a Vercel project and pull `.env.development.local`
+using the Vercel CLI. (I doubt anyone's actually going to do this; message me if
+you actually want more detailed instructions.)
 
 ## Screenshots
 

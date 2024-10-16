@@ -2,12 +2,12 @@ import Link from "next/link";
 import { PropsWithChildren } from "react";
 import { twMerge } from "tailwind-merge";
 
-type Props = PropsWithChildren<{
+type Props = PropsWithChildren & {
   href: string;
   className?: string;
   active?: boolean;
   external?: boolean;
-}>;
+};
 
 export function HeaderLink({
   href,

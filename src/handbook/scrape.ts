@@ -1,29 +1,29 @@
-import { promises as fs } from "fs";
+import { kv } from "@vercel/kv";
 import { JSDOM } from "jsdom";
+import { NodeHtmlMarkdown } from "node-html-markdown";
 import {
-  Comps,
+  Augments,
   Comp,
   CompGroup,
-  TextBlurb,
+  Comps,
+  FlowChartItem,
   Handbook,
   Leveling,
-  Augments,
-  StrongAugments,
-  FlowChartItem,
+  TextBlurb,
 } from "./types";
-import { assert, find, findAll, orThrow, readFileIfExists } from "./utils";
-import { NodeHtmlMarkdown, NodeHtmlMarkdownOptions } from "node-html-markdown";
+import { assert, find, findAll, orThrow } from "./utils";
 
-const HANDBOOK_PAGE_CACHE = "tfthandbook.html";
+const HANDBOOK_PAGE_CACHE_KEY = "handbook_page_cache_key";
+export const HANDBOOK_DATA_KEY = "handbook_data_key";
 
 async function getHandbookPage() {
-  const data = await readFileIfExists(HANDBOOK_PAGE_CACHE);
+  const data = await kv.get<string>(HANDBOOK_PAGE_CACHE_KEY);
   if (data) return data;
 
   const resp = await fetch("https://tfthandbook.com/");
   const htmlString = await resp.text();
 
-  await fs.writeFile(HANDBOOK_PAGE_CACHE, htmlString);
+  await kv.set(HANDBOOK_PAGE_CACHE_KEY, htmlString);
   return htmlString;
 }
 
@@ -193,7 +193,7 @@ function parseAugments(node: Element): Augments {
   };
 }
 
-async function main() {
+export async function fetchHandbookData() {
   const htmlString = await getHandbookPage();
   const document = new JSDOM(htmlString).window.document;
 
@@ -227,7 +227,5 @@ async function main() {
   const leveling = parseLeveling(guidesContentNode);
 
   const handbook: Handbook = { comps, augments, leveling };
-  await fs.writeFile("src/data.json", JSON.stringify(handbook, null, 2));
+  kv.set<Handbook>(HANDBOOK_DATA_KEY, handbook);
 }
-
-main();

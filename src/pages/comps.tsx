@@ -1,14 +1,16 @@
 import { FancyTitle } from "@/components/FancyTitle";
-import { comps } from "@/handbook";
+import { Comp } from "@/handbook/types";
+import { useHandbook } from "@/hooks/useHandbook";
 import Markdown from "react-markdown";
 import { twMerge } from "tailwind-merge";
-import { Comp } from "../../data/types";
 
 function makeUniqueCompId(comp: Comp) {
   return comp.name.toLowerCase().replaceAll(" ", "-");
 }
 
 export default function Comps() {
+  const { comps } = useHandbook();
+
   return (
     <div className="h-full w-full flex">
       <div className="hidden md:flex w-auto py-6 px-4 flex-col gap-8 max-h-full overflow-auto border-r">

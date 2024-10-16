@@ -1,47 +1,49 @@
-import { augments } from "@/handbook";
 import { AugmentsTable } from "@/components/AugmentsTable";
 import { FancyTitle } from "@/components/FancyTitle";
-
-const STRONG_AUGMENTS = [
-  {
-    label: <span className="text-slate-400">Silver Augments</span>,
-    items: augments.strongAugments.silverAugments,
-  },
-  {
-    label: <span className="text-yellow-400">Gold Augments</span>,
-    items: augments.strongAugments.goldAugments,
-  },
-  {
-    label: <span className="text-purple-200">Prismatic Augments</span>,
-    items: augments.strongAugments.prismaticAugments,
-  },
-];
-
-const CHEATSHEET = [
-  {
-    label: (
-      <div className="flex items-center justify-between">
-        <div>Augment</div>
-        <div>What to Play</div>
-      </div>
-    ),
-    items: augments.flowChart.map((it) => (
-      <div className="flex items-center gap-4">
-        <div className="max-w-[50%] whitespace-nowrap overflow-hidden text-ellipsis">
-          {it.augment}
-        </div>
-        <div className="flex-1">
-          <div className="w-full border-t border-dashed border-white/30" />
-        </div>
-        <div className="max-w-[50%] whitespace-nowrap overflow-hidden text-ellipsis text-right">
-          {it.whatToPlay}
-        </div>
-      </div>
-    )),
-  },
-];
+import { useHandbook } from "@/hooks/useHandbook";
 
 export default function Augments() {
+  const { augments } = useHandbook();
+
+  const STRONG_AUGMENTS = [
+    {
+      label: <span className="text-slate-400">Silver Augments</span>,
+      items: augments.strongAugments.silverAugments,
+    },
+    {
+      label: <span className="text-yellow-400">Gold Augments</span>,
+      items: augments.strongAugments.goldAugments,
+    },
+    {
+      label: <span className="text-purple-200">Prismatic Augments</span>,
+      items: augments.strongAugments.prismaticAugments,
+    },
+  ];
+
+  const CHEATSHEET = [
+    {
+      label: (
+        <div className="flex items-center justify-between">
+          <div>Augment</div>
+          <div>What to Play</div>
+        </div>
+      ),
+      items: augments.flowChart.map((it) => (
+        <div className="flex items-center gap-4">
+          <div className="max-w-[50%] whitespace-nowrap overflow-hidden text-ellipsis">
+            {it.augment}
+          </div>
+          <div className="flex-1">
+            <div className="w-full border-t border-dashed border-white/30" />
+          </div>
+          <div className="max-w-[50%] whitespace-nowrap overflow-hidden text-ellipsis text-right">
+            {it.whatToPlay}
+          </div>
+        </div>
+      )),
+    },
+  ];
+
   return (
     <div className="h-full min-h-0 overflow-auto md:overflow-hidden">
       <div className="max-w-screen-xl mx-auto flex flex-col md:grid md:grid-cols-2 p-4 md:p-6 gap-6 md:h-full">

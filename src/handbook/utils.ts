@@ -1,16 +1,3 @@
-import { promises as fs } from "fs";
-
-export async function readFileIfExists(
-  filePath: string
-): Promise<string | null> {
-  try {
-    await fs.access(filePath);
-    return await fs.readFile(filePath, "utf-8");
-  } catch {
-    return null;
-  }
-}
-
 export function orThrow(message: string): never {
   throw new Error(message);
 }

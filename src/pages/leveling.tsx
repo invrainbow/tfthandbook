@@ -1,9 +1,11 @@
 import { FancyTitle } from "@/components/FancyTitle";
-import { leveling } from "@/handbook";
+import { useHandbook } from "@/hooks/useHandbook";
 import Markdown from "react-markdown";
 import { twMerge } from "tailwind-merge";
 
 export default function Leveling() {
+  const { leveling } = useHandbook();
+
   return (
     <div className="h-full w-full overflow-auto min-h-0">
       <div className="flex flex-col">

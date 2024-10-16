@@ -1,17 +1,20 @@
+import { HeaderLink } from "@/components/HeaderLink";
+import { Loading } from "@/components/Loading";
+import { HandbookProvider } from "@/hooks/useHandbook";
+import "@/styles/globals.css";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import {
   BoxesIcon,
   ChevronsUpIcon,
   GalleryHorizontalEndIcon,
   SquareArrowOutUpRightIcon,
 } from "lucide-react";
-import "@/styles/globals.css";
 import type { AppProps } from "next/app";
 import { Poppins } from "next/font/google";
-import { twMerge } from "tailwind-merge";
-import { HeaderLink } from "@/components/HeaderLink";
-import { useRouter } from "next/router";
-import Link from "next/link";
 import Head from "next/head";
+import Link from "next/link";
+import { useRouter } from "next/router";
+import { twMerge } from "tailwind-merge";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -50,7 +53,7 @@ const RIGHT_TABS = [
   },
 ];
 
-export default function App({ Component, pageProps }: AppProps) {
+function Inner({ Component, pageProps }: AppProps) {
   const router = useRouter();
 
   return (
@@ -98,5 +101,17 @@ export default function App({ Component, pageProps }: AppProps) {
         <Component {...pageProps} />
       </div>
     </div>
+  );
+}
+
+const queryClient = new QueryClient();
+
+export default function App(props: AppProps) {
+  return (
+    <QueryClientProvider client={queryClient}>
+      <HandbookProvider loadingView={<Loading />}>
+        <Inner {...props} />
+      </HandbookProvider>
+    </QueryClientProvider>
   );
 }

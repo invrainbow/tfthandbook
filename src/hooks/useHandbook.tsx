@@ -19,8 +19,6 @@ export function HandbookProvider({ loadingView, children }: Props) {
     retry: false,
     queryKey: ["get-handbook"],
     queryFn: async () => {
-      await new Promise((resolve) => setTimeout(resolve, 5000));
-
       const resp = await fetch("/api/fetch-handbook");
       const data = await resp.json();
       return data as Handbook;

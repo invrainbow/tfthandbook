@@ -7,6 +7,8 @@ Website: [**tfthandbook.vercel.app**](https://tfthandbook.vercel.app)
 
 ## Setup
 
+Install Bun.
+
 ```bash
 # install dependencies
 bun install

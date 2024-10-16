@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        handwriting: "var(--font-handwriting)",
+      },
       colors: {
         background: "var(--background)",
       },

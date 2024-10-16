@@ -10,16 +10,21 @@ import {
   SquareArrowOutUpRightIcon,
 } from "lucide-react";
 import type { AppProps } from "next/app";
-import { Poppins } from "next/font/google";
+import { Kalam, Poppins } from "next/font/google";
 import Head from "next/head";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { twMerge } from "tailwind-merge";
 
-const poppins = Poppins({
+const mainFont = Poppins({
   subsets: ["latin"],
-  variable: "--font-poppins",
   weight: ["300", "400", "500", "600", "700"],
+});
+
+const handwritingFont = Kalam({
+  subsets: ["latin"],
+  variable: "--font-handwriting",
+  weight: ["400"],
 });
 
 const MIDDLE_TABS = [
@@ -58,7 +63,11 @@ function Layout({ Component, pageProps }: AppProps) {
 
   return (
     <div
-      className={twMerge("h-screen w-full flex flex-col", poppins.className)}
+      className={twMerge(
+        "h-screen w-full flex flex-col",
+        mainFont.className,
+        handwritingFont.variable
+      )}
     >
       <Head>
         <title>TFT Handbook</title>
@@ -66,14 +75,12 @@ function Layout({ Component, pageProps }: AppProps) {
       <div className="border-b py-4 px-5 grid grid-cols-1 gap-3 md:grid-cols-[400px_auto_400px] justify-between items-center">
         <Link
           href="/"
-          className="text-white text-base font-semibold flex justify-center md:justify-start items-center gap-2 md:gap-2.5"
+          className="text-white text-base font-semibold flex justify-center md:justify-start items-center gap-2 md:gap-2"
         >
-          <img
-            className="block size-6 md:size-6 border border-red-700/80"
-            src="/reforger.webp"
-            alt=""
-          />
           <span>RobinSongz TFT Handbook</span>
+          <span className="text-base -rotate-2 font-medium relative bottom-0.5 text-purple-200 font-handwriting">
+            (revamped!)
+          </span>
         </Link>
 
         <div className="flex-1 flex gap-6 md:gap-8 items-center justify-center">

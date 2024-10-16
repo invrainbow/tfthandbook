@@ -11,7 +11,7 @@ function makeUniqueCompId(comp: Comp) {
 export default function Comps() {
   return (
     <div className="h-full w-full flex">
-      <div className="hidden md:flex w-auto py-6 px-4 flex-col gap-8 max-h-full overflow-auto">
+      <div className="hidden md:flex w-auto py-6 px-4 flex-col gap-8 max-h-full overflow-auto border-r">
         {comps.groups.map(({ label, comps }) => (
           <div key={label} className="">
             <div className="text-sm font-medium uppercase text-white/50 mb-2">
@@ -32,7 +32,7 @@ export default function Comps() {
           </div>
         ))}
       </div>
-      <div className="flex-1 border-l max-h-full overflow-auto">
+      <div className="flex-1 max-h-full overflow-auto">
         <div className="flex flex-col">
           {comps.groups.map(({ label, comps }, i) => (
             <div key={label} className="flex flex-col">

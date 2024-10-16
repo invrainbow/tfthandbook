@@ -11,6 +11,7 @@ import { twMerge } from "tailwind-merge";
 import { HeaderLink } from "@/components/HeaderLink";
 import { useRouter } from "next/router";
 import Link from "next/link";
+import Head from "next/head";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -56,6 +57,9 @@ export default function App({ Component, pageProps }: AppProps) {
     <div
       className={twMerge("h-screen w-full flex flex-col", poppins.className)}
     >
+      <Head>
+        <title>TFT Handbook</title>
+      </Head>
       <div className="border-b py-4 px-5 grid grid-cols-1 gap-3 md:grid-cols-[400px_auto_400px] justify-between items-center">
         <Link
           href="/"

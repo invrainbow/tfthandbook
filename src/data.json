@@ -17,6 +17,18 @@
             "headerImageUrl": "https://tfthandbook.com/wp-content/uploads/2024/08/gwen-e1725129723397.jpg"
           },
           {
+            "name": "6 Shapeshifter",
+            "diagramUrl": "https://tfthandbook.com/wp-content/uploads/2024/08/shape-varus-1024x448.png",
+            "description": {
+              "sections": [
+                "When to Play:\n\nHunter + Shape opener",
+                "How to Play:\n\nLevel 8 roll for 6 shapeshifter + Varus + Nomsy. Play Briar / Smolder if you hit\n\nGo 9 for Smolder / Briar",
+                "Items:\n\nVarus: Guinsoo IE + 1 , transfer to Smolder when you hit\n\nNasus/Swain/Neeko: Redemption Evenshroud\n\nBriar: AD items"
+              ]
+            },
+            "headerImageUrl": "https://tfthandbook.com/wp-content/uploads/2024/08/briar-e1724959122966.jpg"
+          },
+          {
             "name": "Arcana Varus",
             "diagramUrl": "https://tfthandbook.com/wp-content/uploads/2024/09/arcana-varus-1-1024x462.png",
             "description": {
@@ -71,6 +83,20 @@
         "label": "Emblem",
         "comps": [
           {
+            "name": "5 Pyro",
+            "diagramUrl": "https://tfthandbook.com/wp-content/uploads/2024/07/pyro-varus-1024x467.png",
+            "description": {
+              "sections": [
+                "When to Play:\n\nPyro + 1",
+                "How to Play:\n\nFast 8, roll for 5 pyro (if pyro spat) + arcana + rumble\n\nBoard above is ideal board.\n\nCan play any shape before Briar and Pyro spat on Hecarim. Can also play Pyro Camille.",
+                "",
+                "Items:\n\nVarus: Shojin IE + 1\n\nNasus/Tahm/Shen: Tank items",
+                ""
+              ]
+            },
+            "headerImageUrl": "https://tfthandbook.com/wp-content/uploads/2024/07/Varus_9-e1721798976309.jpg"
+          },
+          {
             "name": "6 Blaster",
             "diagramUrl": "https://tfthandbook.com/wp-content/uploads/2024/09/6-blaster-1024x463.png",
             "description": {
@@ -81,6 +107,42 @@
               ]
             },
             "headerImageUrl": "https://tfthandbook.com/wp-content/uploads/2024/09/Ezreal_3-1-e1727111907530.jpg"
+          },
+          {
+            "name": "6 Chrono",
+            "diagramUrl": "https://tfthandbook.com/wp-content/uploads/2024/09/chrono-karma.png",
+            "description": {
+              "sections": [
+                "When to Play:\n\nChrono Emblem",
+                "How to Play:\n\nGo level 8 play 6 chrono + x. Can be preservers, gwen + fiora, nasus+neeko, incantor, etc\n\nPlay 4 chrono + x before you hit Camille",
+                "Items:\n\nKarma: BB Morello + 1\n\nRakan: Tank"
+              ]
+            },
+            "headerImageUrl": "https://tfthandbook.com/wp-content/uploads/2024/09/Zilean_14-e1726128317148.jpg"
+          },
+          {
+            "name": "6 Hunter",
+            "diagramUrl": "https://tfthandbook.com/wp-content/uploads/2024/10/6-hunter-1024x459.png",
+            "description": {
+              "sections": [
+                "When to Play:\n\nHunter Emblem",
+                "How to Play:\n\nPush level 8 and roll for 6 hunter + bard zilean wukong\n\nSame as Jinx reroll except youre tempoing 8 instead of rerolling\n\nRoll for Jinx/Wu on 8",
+                "Items:\n\nJinx: Guinsoo Runaans + 1\n\nWukong: Gargoyle + 2\n\nOlaf: AD items\n\nHunter emblem can go on Zilean or Bard"
+              ]
+            },
+            "headerImageUrl": "https://tfthandbook.com/wp-content/uploads/2024/10/Jinx_51-e1728853359569.jpg"
+          },
+          {
+            "name": "6 Scholar",
+            "diagramUrl": "https://tfthandbook.com/wp-content/uploads/2024/10/6-scholar-1024x462.png",
+            "description": {
+              "sections": [
+                "When to Play:\n\nScholar Emblem",
+                "How to Play:\n\nGo level 8 and roll for 6 scholar (must hit milio)\n\nIf you dont hit milio, play 4 scholar + frontline units and go 9",
+                "Items:\n\nRyze: Redbuff/Morello + AP\n\nMilio: Attack Speed / Mana gen items\n\nTaric: Tank"
+              ]
+            },
+            "headerImageUrl": "https://tfthandbook.com/wp-content/uploads/2024/10/Milio_1-e1728853473423.jpg"
           },
           {
             "name": "6 Sugarcraft",
@@ -139,7 +201,7 @@
             "headerImageUrl": "https://tfthandbook.com/wp-content/uploads/2024/07/Olaf_2-e1721893265164.jpg"
           },
           {
-            "name": "8 Portal Ryze",
+            "name": "8 Portal",
             "diagramUrl": "https://tfthandbook.com/wp-content/uploads/2024/07/portal-ryze-1-1024x461.png",
             "description": {
               "sections": [
@@ -150,32 +212,6 @@
               ]
             },
             "headerImageUrl": "https://tfthandbook.com/wp-content/uploads/2024/07/Ryze_5-e1721834411686.jpg"
-          },
-          {
-            "name": "Chrono Karma",
-            "diagramUrl": "https://tfthandbook.com/wp-content/uploads/2024/09/chrono-karma.png",
-            "description": {
-              "sections": [
-                "When to Play:\n\nChrono Emblem",
-                "How to Play:\n\nGo level 8 play 6 chrono + x. Can be preservers, gwen + fiora, nasus+neeko, incantor, etc\n\nPlay 4 chrono + x before you hit Camille",
-                "Items:\n\nKarma: BB Morello + 1\n\nRakan: Tank"
-              ]
-            },
-            "headerImageUrl": "https://tfthandbook.com/wp-content/uploads/2024/09/Zilean_14-e1726128317148.jpg"
-          },
-          {
-            "name": "Pyro Varus",
-            "diagramUrl": "https://tfthandbook.com/wp-content/uploads/2024/07/pyro-varus-1024x467.png",
-            "description": {
-              "sections": [
-                "When to Play:\n\nPyro + 1",
-                "How to Play:\n\nFast 8, roll for 5 pyro (if pyro spat) + arcana + rumble\n\nBoard above is ideal board.\n\nCan play any shape before Briar and Pyro spat on Hecarim. Can also play Pyro Camille.",
-                "",
-                "Items:\n\nVarus: Shojin IE + 1\n\nNasus/Tahm/Shen: Tank items",
-                ""
-              ]
-            },
-            "headerImageUrl": "https://tfthandbook.com/wp-content/uploads/2024/07/Varus_9-e1721798976309.jpg"
           }
         ]
       },
@@ -193,18 +229,6 @@
               ]
             },
             "headerImageUrl": "https://tfthandbook.com/wp-content/uploads/2024/07/Ashe_32-e1726126177841.jpg"
-          },
-          {
-            "name": "Bastion Ahri",
-            "diagramUrl": "https://tfthandbook.com/wp-content/uploads/2024/08/bastion-ahri-1-1024x462.png",
-            "description": {
-              "sections": [
-                "When to Play:\n\nLots of Zoe, Poppy, Lilia copies, reroll augment preferred",
-                "How to Play:\n\nLevel 5 slowroll for Lilia 3 > Zoe 3 > Poppy 3\n\nGo level 6/7 and slowroll for Ahri 3\n\nPush levels for 4 bastion 4 scholar + arcana",
-                "Items:\n\nAhri: BB NASHOR JG/RABADON\n\nLillia: Tank"
-              ]
-            },
-            "headerImageUrl": "https://tfthandbook.com/wp-content/uploads/2024/08/Ahri_66-e1723653649101.jpg"
           },
           {
             "name": "Blaster Reroll",
@@ -320,6 +344,18 @@
             "headerImageUrl": "https://tfthandbook.com/wp-content/uploads/2024/07/Galio_1-e1721892934705.jpg"
           },
           {
+            "name": "High Horsepower Lilia",
+            "diagramUrl": "https://tfthandbook.com/wp-content/uploads/2024/08/high-horsepower-lilia-1024x450.png",
+            "description": {
+              "sections": [
+                "When to Play:\n\nHigh Horsepower hero augment",
+                "How to Play:\n\nSlowroll level 5 for Lilia 3 > Poppy 3 > Zoe 3\n\nPush levels for 4 bastion 4 scholar 2 arcana",
+                "Items:\n\nLilia: BT AA SPARK\n\nPoppy: Tank items\n\nZoe: Leftover AP items"
+              ]
+            },
+            "headerImageUrl": "https://tfthandbook.com/wp-content/uploads/2024/08/Lillia_0-e1723653308580.jpg"
+          },
+          {
             "name": "Molten Caramel Rumble",
             "diagramUrl": "https://tfthandbook.com/wp-content/uploads/2024/08/molten-caramel-rumble-1024x450.png",
             "description": {
@@ -330,6 +366,19 @@
               ]
             },
             "headerImageUrl": "https://tfthandbook.com/wp-content/uploads/2024/08/rumble-e1723652691774.jpg"
+          },
+          {
+            "name": "Spider Queen Elise",
+            "diagramUrl": "https://tfthandbook.com/wp-content/uploads/2024/07/spider-queen-elise-1-1024x448.png",
+            "description": {
+              "sections": [
+                "When to Play:\n\nSpider Queen Hero Augment",
+                "How to Play:\n\nRoll for Elise 3 > push levels for 6 shape + varus + smolder\n\nPlay Briar if you hit",
+                "Items:\n\nElise: AP + HEALING + SPARK / TANK ITEMS\n\nVarus: AD items",
+                ""
+              ]
+            },
+            "headerImageUrl": "https://tfthandbook.com/wp-content/uploads/2024/07/Elise_24-e1721892361691.jpg"
           },
           {
             "name": "Sweet Tooth Nunu",
@@ -408,7 +457,7 @@
         "What Doesn’t Kill You"
       ],
       "prismaticAugments": [
-        "Support Golem 2",
+        "Dark Alley Dealing",
         "Giant and Mighty",
         "What The Forge",
         "At What Cost",
@@ -425,36 +474,36 @@
     },
     "flowChart": [
       {
-        "augment": "Frost Crown/Crest/Winter is Coming",
-        "whatToPlay": "7 Frost"
+        "augment": "Learning to Spell / Mage Crown",
+        "whatToPlay": "Seraphine / Soraka Reroll"
       },
       {
-        "augment": "Warrior Crest/Crown",
-        "whatToPlay": "6 Warrrior"
+        "augment": "Sugarcraft Crest/Crown",
+        "whatToPlay": "6 Sugar"
       },
       {
-        "augment": "Blaster Crown",
-        "whatToPlay": "Blaster Reroll"
+        "augment": "Higher Education / Scholar Crest / Crown",
+        "whatToPlay": "6 Scholar"
       },
       {
         "augment": "Portal Crest/Crown",
         "whatToPlay": "8 Portal Ryze"
       },
       {
-        "augment": "Witchcraft Crest",
+        "augment": "Witchcraft Crest/Crown",
         "whatToPlay": "6 Witchcraft Karma"
       },
       {
-        "augment": "Hunting Frenzy",
-        "whatToPlay": "Jinx/Kog Reroll"
+        "augment": "Hunting Frenzy / Hunter Crest / Crown / Category Five",
+        "whatToPlay": "Jinx Reroll"
       },
       {
         "augment": "Molten  Caramel",
         "whatToPlay": "Molten Caramel Rumble"
       },
       {
-        "augment": "Sugarcraft Crown",
-        "whatToPlay": "6 Sugar"
+        "augment": "Draconic Mastery",
+        "whatToPlay": "Nomsy Shyv Reroll"
       },
       {
         "augment": "Pyro Crest/Crown",
@@ -477,8 +526,16 @@
         "whatToPlay": "Arcana Varus"
       },
       {
-        "augment": "Eldritch Crest",
+        "augment": "Eldritch Crest / Crown",
         "whatToPlay": "7 Eldritch"
+      },
+      {
+        "augment": "Royal Guard / Faerie Crest",
+        "whatToPlay": "5 Faerie Kalista"
+      },
+      {
+        "augment": "Dejavu",
+        "whatToPlay": "Galio Reroll"
       },
       {
         "augment": "Faerie Crest/Crown/Royal Guard",

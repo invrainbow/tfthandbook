@@ -53,7 +53,7 @@ const RIGHT_TABS = [
   },
 ];
 
-function Inner({ Component, pageProps }: AppProps) {
+function Layout({ Component, pageProps }: AppProps) {
   const router = useRouter();
 
   return (
@@ -110,7 +110,7 @@ export default function App(props: AppProps) {
   return (
     <QueryClientProvider client={queryClient}>
       <HandbookProvider loadingView={<Loading />}>
-        <Inner {...props} />
+        <Layout {...props} />
       </HandbookProvider>
     </QueryClientProvider>
   );

@@ -20,15 +20,12 @@ export function HandbookProvider({ loadingView, children }: Props) {
     queryKey: ["get-handbook"],
     queryFn: async () => {
       const resp = await fetch("/api/fetch-handbook");
-      const data = await resp.json();
-      return data as Handbook;
+      return (await resp.json()) as Handbook;
     },
   });
 
   useEffect(() => {
-    if (error) {
-      alert(error);
-    }
+    if (error) alert(error);
   }, [error]);
 
   if (isLoading) return loadingView;

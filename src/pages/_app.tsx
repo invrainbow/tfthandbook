@@ -78,7 +78,7 @@ function Layout({ Component, pageProps }: AppProps) {
           className="text-white text-base font-semibold flex justify-center md:justify-start items-center gap-2 md:gap-2"
         >
           <span>RobinSongz TFT Handbook</span>
-          <span className="text-base -rotate-2 font-medium relative bottom-0.5 text-purple-200 font-handwriting">
+          <span className="hidden text-base -rotate-2 font-medium relative bottom-0.5 text-purple-200 font-handwriting">
             (revamped!)
           </span>
         </Link>

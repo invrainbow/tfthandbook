@@ -1,0 +1,8 @@
+{
+  "crons": [
+    {
+      "path": "/api/refresh-handbook",
+      "schedule": "0 0 * * *"
+    }
+  ]
+}

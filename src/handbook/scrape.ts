@@ -13,19 +13,7 @@ import {
 } from "./types";
 import { assert, find, findAll, orThrow } from "./utils";
 
-const HANDBOOK_PAGE_CACHE_KEY = "handbook_page_cache_key";
 export const HANDBOOK_DATA_KEY = "handbook_data_key";
-
-async function getHandbookPage() {
-  const data = await kv.get<string>(HANDBOOK_PAGE_CACHE_KEY);
-  if (data) return data;
-
-  const resp = await fetch("https://tfthandbook.com/");
-  const htmlString = await resp.text();
-
-  await kv.set(HANDBOOK_PAGE_CACHE_KEY, htmlString);
-  return htmlString;
-}
 
 function parseTextBlurb(node: Element): TextBlurb {
   const ret: TextBlurb = { sections: [] };
@@ -194,7 +182,9 @@ function parseAugments(node: Element): Augments {
 }
 
 export async function fetchHandbookData() {
-  const htmlString = await getHandbookPage();
+  const resp = await fetch("https://tfthandbook.com/");
+  const htmlString = await resp.text();
+
   const document = new JSDOM(htmlString).window.document;
 
   const tabsContainerNode = find(document, ".e-n-tabs");

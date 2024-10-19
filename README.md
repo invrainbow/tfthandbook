@@ -1,29 +1,50 @@
 # TFT Handbook
 
 This is a revamp of the [TFT Handbook](https://tfthandbook.com/) by RobinSongz.
-It makes it nicer looking and easier to navigate in game.
+It makes it nicer looking and easier to navigate.
 
-Website: [**tfthandbook.vercel.app**](https://tfthandbook.vercel.app)
+A public instance of this is deployed here:
+[**tfthandbook.vercel.app**](https://tfthandbook.vercel.app)
+
+Tech stack:
+
+- [Scraper](src/handbook/scrape.ts) to pull data from website as JSON
+- Website data stored as a JSON string in Redis
+- Vercel cron job to run the scraper every day
+- Next.js app to display handbook
 
 ## Setup
 
-Install Bun.
+The app uses Vercel for storage, so to even run it locally you'll need to:
+
+- Fork the repo
+- Set up a Vercel project linked to the repo
+- Add Vercel KV to your project, use the same one for dev/staging/prod
+
+This should be enough for Vercel to deploy, but you'll need to wait for the cron
+job to fetch the handbook data. To to manually fetch it, or run the app locally,
+clone your forked repo and link your local folder to the Vercel project:
 
 ```bash
-# install dependencies
+bun install -g vercel
+cd your-cloned-repo
+vercel link
+vercel env pull .env.development.local
+```
+
+To trigger a scrape locally (it'll write to the same Redis instance as
+production):
+
+```bash
 bun install
-
-# run app locally
-bun dev  # spins up at localhost:3000
-
-# run script to fetch latest handbook & store in redis
 bun run cli/fetch-handbook.ts
 ```
 
-Since it uses Vercel's storage feature, to actually run it (even locally) you'll
-need to fork the repo, set up a Vercel project and pull `.env.development.local`
-using the Vercel CLI. (I doubt anyone's actually going to do this; message me if
-you actually want more detailed instructions.)
+To run the app locally:
+
+```
+bun dev
+```
 
 ## Screenshots
 

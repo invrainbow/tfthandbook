@@ -16,23 +16,15 @@ export function HeaderLink({
   active,
   children,
 }: Props) {
-  const newClassName = twMerge(
-    "cursor-pointer uppercase font-semibold text-sm flex items-center gap-1.5",
-    className,
-    active ? "text-white" : "text-slate-400 hover:text-slate-300"
-  );
+  const props = {
+    href,
+    className: twMerge(
+      "cursor-pointer uppercase font-semibold text-sm flex items-center gap-1.5",
+      className,
+      active ? "text-white" : "text-slate-400 hover:text-slate-300"
+    ),
+    children,
+  };
 
-  if (external) {
-    return (
-      <a target="_blank" href={href} className={newClassName}>
-        {children}
-      </a>
-    );
-  }
-
-  return (
-    <Link href={href} className={newClassName}>
-      {children}
-    </Link>
-  );
+  return external ? <a target="_blank" {...props} /> : <Link {...props} />;
 }

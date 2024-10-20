@@ -31,9 +31,8 @@ export function HandbookProvider({ loadingView, children }: Props) {
   if (isLoading) return loadingView;
   if (!data) return null;
 
-  return (
-    <HandbookContext.Provider value={data}>{children}</HandbookContext.Provider>
-  );
+  const { Provider } = HandbookContext;
+  return <Provider value={data}>{children}</Provider>;
 }
 
 export const useHandbook = () => useContext(HandbookContext);
